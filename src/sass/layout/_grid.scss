@@ -1,2 +1,7 @@
 @use 'abstracts/breakpoints' as b;
 
+.header__container {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(2, 1fr);
+}
