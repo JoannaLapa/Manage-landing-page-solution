@@ -13,23 +13,15 @@ $very-pale-red: hsl(13, 100%, 96%);
 $vary-light-gray: hsl(0, 0%, 98%);
 
 //font-sizes
-$fz-300: 0.8125rem;
-$fz-400: 0.875rem;
-$fz-500: 0.9375rem;
-$fz-600: 1rem;
-$fz-700: 1.875rem;
-$fz-800: 2.5rem;
-$fz-900: 3.5rem;
+$fs-300: 0.8125rem;
+$fs-400: 0.875rem;
+$fs-500: 0.9375rem;
+$fs-600: 1rem;
+$fs-700: 1.875rem;
+$fs-800: 2.5rem;
+$fs-900: 3.5rem;
 
-$fz-body: $fz-400;
-$fz-primary-heading: $fz-800;
-$fz-secondary-heading: $fz-700;
-$fz-nav: $fz-500;
-$fz-button: $fz-300;
+//font-weight
+$fw-semi-bold: 500;
+$fw-bold: 700;
 
-// @include respond-to('small') {
-//     $fz-body: $fz-500;
-//     $fz-primary-heading: $fz-900;
-//     $fz-secondary-heading: $fz-800;
-//     $fz-nav: $fz-300;
-// }

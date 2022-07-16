@@ -4,7 +4,38 @@ body {
 	font-family: 'Be Vietnam Pro', sans-serif;
 }
 
+
+
 .footer__wrapper {
 	font-size: v.$fz-300;
 	text-align: center;
+}
+
+.fs-body {
+	font-size: v.$fs-400;
+} 
+
+
+.fs-primary-heading {
+	font-size: v.$fs-800;
+}
+
+.fs-secondary-heading {
+font-size: v.$fs-700;
+} 
+
+.fs-nav {
+	font-size: v.$fs-500;
+}
+
+.fs-button {
+ font-size: v.$fs-300;
+}
+
+.fw-semi-bold {
+	font-weight: v.$fw-semi-bold
+}
+
+.fw-bold {
+	font-weight: v.$fw-bold;
 }
