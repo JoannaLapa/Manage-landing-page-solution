@@ -1,5 +1,25 @@
-@use 'abstracts/variables' as v;
 @use 'abstracts/breakpoints' as b;
+@use 'abstracts/variables' as v;
+
+.text-primary-900 {
+    color: v.$primary-900;
+}
+
+.text-primary-400 {
+    color: v.$primary-400;
+}
+
+.text-neutral-900 {
+    color: v.$neutral-900;
+}
+
+.text-neutral-100 {
+    color: v.$neutral-100;
+}
+
+.text-neutral-200 {
+    color: v.$neutral-200;
+}
 
 .attribution a {
 	color: hsl(228, 45%, 44%);

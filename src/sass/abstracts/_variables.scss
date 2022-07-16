@@ -2,15 +2,14 @@
 //colors
 // ### Primary
 
-$bright-red: hsl(12, 88%, 59%);
-$dark-blue: hsl(228, 39%, 23%);
+$primary-400: hsl(12, 88%, 59%);
+$primary-900: hsl(228, 39%, 23%);
 
 // ### Neutral
-
-$dark-grayish-blue: hsl(227, 12%, 61%);
-$very-dark-blue: hsl(233, 12%, 13%);
-$very-pale-red: hsl(13, 100%, 96%);
-$vary-light-gray: hsl(0, 0%, 98%);
+$neutral-100: hsl(0, 0%, 98%);
+$neutral-200: hsl(13, 100%, 96%);
+$neutral-300: hsl(227, 12%, 61%);
+$neutral-900: hsl(233, 12%, 13%);
 
 //font-sizes
 $fs-300: 0.8125rem;
