@@ -1,6 +1,10 @@
 @use 'abstracts/breakpoints' as b;
 @use 'abstracts/variables' as v;
 
+body {
+	background-image: url('../img/bg-simplify-section-mobile.svg');
+}
+
 .text-primary-900 {
     color: v.$primary-900;
 }
@@ -9,8 +13,8 @@
     color: v.$primary-400;
 }
 
-.text-neutral-900 {
-    color: v.$neutral-900;
+.text-neutral-300 {
+    color: v.$neutral-300;
 }
 
 .text-neutral-100 {
@@ -21,6 +25,4 @@
     color: v.$neutral-200;
 }
 
-.attribution a {
-	color: hsl(228, 45%, 44%);
-}
+
