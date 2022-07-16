@@ -11,10 +11,12 @@ body {
 
 .fs-primary-heading {
 	font-size: v.$fs-800;
+	line-height: 1.1;
 }
 
 .fs-secondary-heading {
 font-size: v.$fs-700;
+line-height: 1.1;
 } 
 
 .fs-nav {
@@ -23,6 +25,10 @@ font-size: v.$fs-700;
 
 .fs-button {
  font-size: v.$fs-300;
+}
+
+.fs-paragraph {
+	font-size: v.$fs-600;
 }
 
 .fw-semi-bold {
