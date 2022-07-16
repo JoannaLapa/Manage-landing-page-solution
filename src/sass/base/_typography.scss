@@ -1,11 +1,10 @@
 @use 'abstracts/variables' as v;
 
-
-
-.footer__wrapper {
-	font-size: v.$fz-100;
-	text-align: center;
+body {
+	font-family: 'Be Vietnam Pro', sans-serif;
 }
 
-
-
+.footer__wrapper {
+	font-size: v.$fz-300;
+	text-align: center;
+}

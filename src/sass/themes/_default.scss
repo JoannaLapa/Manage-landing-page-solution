@@ -1,0 +1,6 @@
+@use 'abstracts/variables' as v;
+@use 'abstracts/breakpoints' as b;
+
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
