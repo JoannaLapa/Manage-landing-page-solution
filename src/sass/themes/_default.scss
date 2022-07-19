@@ -1,9 +1,10 @@
 @use 'abstracts/breakpoints' as b;
 @use 'abstracts/variables' as v;
 
-body {
-	background-image: url('../img/bg-simplify-section-mobile.svg');
-}
+// body {
+   
+// 	background-image: url('../img/bg-simplify-section-mobile.svg');
+// }
 
 .text-primary-900 {
     color: v.$primary-900;
@@ -25,4 +26,15 @@ body {
     color: v.$neutral-200;
 }
 
+.bg-primary-400,
+.button--orange {
+    background-color: v.$primary-400;
+} 
 
+.bg-neutral-900 {
+    background-color: v.$neutral-900;
+}
+
+.button--white {
+    background-color: v.$neutral-100;
+}
