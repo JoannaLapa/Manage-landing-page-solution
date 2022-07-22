@@ -7,9 +7,10 @@
 @forward 'base/reset';
 
 // 3. Components 
+@forward 'components/bg-ornament';
 @forward 'components/buttons';
 @forward 'components/carousel';
-@forward 'components/hamburger';
+@forward 'components/navigation';
 
 // 4. Layout-related sections
 @forward 'layout/base-layout';
