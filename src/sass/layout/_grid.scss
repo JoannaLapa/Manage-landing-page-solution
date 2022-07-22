@@ -1,19 +1,20 @@
 @use 'abstracts/breakpoints' as b;
 
 .header__container {
-    display: grid;
-    justify-content: space-between;
-    grid-template-columns: repeat(2, 1fr);
+	display: grid;
+	justify-content: space-between;
+	grid-template-columns: repeat(2, 1fr);
 }
 
 .even-columns {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 0.3125rem;
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 0.3125rem;
 }
 
 .even-columns__box {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 0.47rem;
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 0.47rem;
+	justify-items: center;
 }

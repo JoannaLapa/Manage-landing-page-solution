@@ -1,0 +1,15 @@
+@use 'abstracts/variables' as v;
+
+.button {
+	margin-block: 1.5625rem;
+
+	width: 8.75rem;
+	height: 43px;
+
+	border-radius: 30rem;
+	border: 0.0625rem solid transparent;
+
+	color: v.$neutral-200;
+	text-shadow: 0px 0px 1px rgba(255, 239, 235, 1);
+   
+}

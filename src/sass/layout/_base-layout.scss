@@ -1,7 +1,32 @@
+//UTILITY CLASSES
+.padding-block-1 {
+    padding-block: 0.4rem;
+}
+
 .padding-block-2 {
     padding-block: 2.75rem;
 }
 
+.padding-block-3 {
+    padding-block: 4.375rem 0;
+}
+
 .padding-inline-1 {
     padding-inline: 1.0625rem;
+}
+
+.padding-inline-2 {
+    padding-inline: 1.1875rem 0;
+}
+
+.padding-inline-3 {
+    padding-inline: 1.5rem;
+}
+
+.padding-inline-4 {
+    padding-inline: 1.875rem;
+}
+
+.text-aling-center {
+    text-align: center;
 }

@@ -4,39 +4,64 @@ body {
 	font-family: 'Be Vietnam Pro', sans-serif;
 }
 
+//utility classes
+
 .fs-body {
 	font-size: v.$fs-400;
-} 
-
-
-.fs-primary-heading {
-	font-size: v.$fs-800;
-	line-height: 1.1;
 }
-
-.fs-secondary-heading {
-font-size: v.$fs-700;
-line-height: 1.1;
-} 
 
 .fs-nav {
 	font-size: v.$fs-500;
 }
 
 .fs-button {
- font-size: v.$fs-300;
+	font-size: v.$fs-300;
 }
 
-.fs-paragraph {
+.paragraph__font-size--600 {
 	font-size: v.$fs-600;
+	line-height: 1.6563;
+}
+
+.paragraph__font-size--400 {
+	font-size: v.$fs-400;
+	line-height: 1.95;
+}
+
+.paragraph__typography--common {
+	font-family: 'Be Vietnam Pro', sans-serif;
+	opacity: 0.7;
+	text-shadow: 0px 0px 1px v.$neutral-900;
+	font-weight: 200;
 }
 
 .fw-semi-bold {
-	font-weight: v.$fw-semi-bold
+	font-weight: v.$fw-semi-bold;
 }
 
 .fw-bold {
 	font-weight: v.$fw-bold;
+}
+
+.primary-heading {
+	font-size: v.$fs-800;
+	line-height: 1.4;
+	
+	text-align: center;
+    
+	text-shadow: 0px 0px 2px v.$primary-900;
+}
+
+.secondary-heading {
+	font-size: v.$fs-700;
+	line-height: 1.45;
+	letter-spacing: -1px;
+
+	text-align: center;
+}
+
+.text-indent {
+	text-indent: 0.3125rem;
 }
 
 .attribution {
