@@ -1,11 +1,6 @@
 @use 'abstracts/breakpoints' as b;
 @use 'abstracts/variables' as v;
 
-// body {
-   
-// 	background-image: url('../img/bg-simplify-section-mobile.svg');
-// }
-
 .text-primary-900 {
     color: v.$primary-900;
 }
