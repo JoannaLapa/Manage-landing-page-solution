@@ -30,9 +30,11 @@ body {
 
 .paragraph__typography--common {
 	font-family: 'Be Vietnam Pro', sans-serif;
-	opacity: 0.7;
-	text-shadow: 0px 0px 1px v.$neutral-900;
 	font-weight: 200;
+
+	text-shadow: 0px 0px 1px v.$neutral-900;
+
+	opacity: 0.7;
 }
 
 .fw-semi-bold {
