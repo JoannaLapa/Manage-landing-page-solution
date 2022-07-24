@@ -20,8 +20,11 @@
 }
 
 .bg-ornament--extra-small {
-    height: 2.375rem;
-    width: 100%;
+	right: -30px;
+	height: 2.375rem;
+	width: 100%;
+
+	transform: rotate(-180deg);
 }
 
 .bg-ornament--big,
