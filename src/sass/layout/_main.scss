@@ -1,4 +1,7 @@
 @use 'abstracts/variables' as v;
 @use 'abstracts/breakpoints' as b;
 
-
+.slider__img {
+    width: 4.6875rem;
+    height: 4.6875rem;
+}
