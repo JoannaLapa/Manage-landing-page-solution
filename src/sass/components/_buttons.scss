@@ -2,9 +2,9 @@
 
 .button,
 .button-styled-component {
-	margin-block: 1.48rem;
-	padding-inline: 1.875rem;
-	padding-block: 0.75rem;
+	
+	width: 8.625rem;
+	height: 2.8125rem;
 
 	border-radius: 30rem;
 	border: 0.0625rem solid transparent;
@@ -20,8 +20,10 @@
 	display: inline-block;
 
 	height: 2.375rem;
+	width: 4.0625rem;
 	padding-inline: 1.5rem;
 	padding-block: 0.4rem;
 
 	letter-spacing: -1px;
 }
+

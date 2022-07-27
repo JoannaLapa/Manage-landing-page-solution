@@ -1,14 +1,27 @@
 @use 'abstracts/variables' as v;
 
 .slider {
+	&__section-container {
+		display: grid;
+		grid-template-rows: 50px 315px 30px 1fr;
+		gap: 1.5rem;
+		align-items: start;
+		justify-items: center;
+		min-height: 35.9375rem;
+
+		h2 {
+			grid-row: 1;
+		}
+	}
 	&__container {
 		position: relative;
 
 		display: grid;
-		grid-template-columns: auto-flow;
+		grid-template-columns: repeat(4, 1fr);
+		grid-row: 2;
 
-		max-width: 90rem;
-		min-height: 35rem;
+		width: 100%;
+		min-height: 19.6875rem;
 		column-gap: 1.0625rem;
 
 		/* IN THE END */
@@ -17,7 +30,7 @@
 
 	&__slide {
 		position: absolute;
-		top: calc(2.34rem + 3.6rem);
+		top: calc(2.34rem + 1.8rem);
 		display: grid;
 		grid-template-rows: 5rem 1fr;
 		gap: 1.4375rem;
@@ -32,7 +45,7 @@
 		display: grid;
 		grid-template-rows: 2.375rem 1fr;
 		gap: 1.4375rem;
-		align-items: start;
+		align-items: center;
 		justify-items: center;
 		grid-row: 1;
 		width: 100%;
@@ -40,6 +53,12 @@
 		h3 {
 			grid-row: 2;
 			letter-spacing: -0.0625rem;
+		}
+
+		button {
+			grid-row: 4;
+
+			margin-block: 0;
 		}
 	}
 	&__img {
@@ -49,8 +68,8 @@
 		grid-row: 1;
 		transform: translateX(-50%);
 
-		width: 4.6875rem;
-		height: 4.6875rem;
+		width: 4.5rem;
+		height: 4.5rem;
 	}
 
 	&__blockquote {
@@ -75,4 +94,21 @@
 }
 .translate--200 {
 	transform: translateX(200%);
+}
+
+.dots {
+	display: flex;
+	align-items: center;
+	gap: 0.125rem;
+	grid-row: 3;
+
+	&__dot {
+		margin-inline: 1.5px;
+		width: 8px;
+		height: 8px;
+
+		background-color: v.$neutral-100;
+		border: 1px solid v.$primary-400;
+		border-radius: 50%;
+	}
 }
