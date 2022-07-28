@@ -7,6 +7,16 @@
 	width: 15rem;
 }
 
+.footer__social-media-ul {
+    display: flex;
+    gap: 2.0625rem;
+
+    img {
+        width: 2.125rem;
+        height: 2.125rem;
+    }
+}
+
 .attribution{
     padding-bottom: 1rem;
 

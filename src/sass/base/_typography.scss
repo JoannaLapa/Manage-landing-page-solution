@@ -54,9 +54,9 @@ body {
 .primary-heading {
 	font-size: v.$fs-800;
 	line-height: 1.4;
-	
+
 	text-align: center;
-    
+
 	text-shadow: 0px 0px 2px v.$primary-900;
 }
 
@@ -78,9 +78,8 @@ body {
 }
 
 .letter-spacing-normal {
-letter-spacing: normal;
+	letter-spacing: normal;
 }
-
 
 .attribution {
 	font-size: v.$fs-300;
@@ -91,4 +90,8 @@ letter-spacing: normal;
 	font-size: v.$fs-300;
 	text-indent: -1rem;
 	text-align: center;
+}
+
+.footer__nav-ul {
+	font-size: v.$fs-400;
 }
