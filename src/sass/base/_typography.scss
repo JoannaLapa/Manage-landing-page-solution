@@ -86,3 +86,9 @@ letter-spacing: normal;
 	font-size: v.$fs-300;
 	text-align: center;
 }
+
+.footer__input::placeholder {
+	font-size: v.$fs-300;
+	text-indent: -1rem;
+	text-align: center;
+}

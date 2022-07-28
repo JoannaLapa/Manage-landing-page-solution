@@ -2,24 +2,32 @@
 
 .button--white,
 .button--orange,
-.button-styled-component {
+.button-styled-component,
+.button--small,
+.footer__input {
 	border-radius: 30rem;
 	border: 0.0625rem solid transparent;
 }
 
 .button--white,
-.button--orange {
-	width: 8.625rem;
+.button--orange,
+.button--small,
+.footer__input {
+	
 	height: 2.8125rem;
 
 	text-shadow: 0px 0px 1px rgba(255, 239, 235, 1);
 	cursor: pointer;
-
-	&--orange {
-		box-shadow: 0 1.125em 1em -1em v.$primary-400;
-	}
 }
 
+.button--white,
+.button--orange {
+	width: 8.625rem;
+}
+
+.button--orange {
+	box-shadow: 0 1.125em 1em -1em v.$primary-400;
+}
 .button-styled-component {
 	display: inline-block;
 
@@ -28,3 +36,8 @@
 
 	letter-spacing: -1px;
 }
+
+.button--small {
+	width: 5.3125rem;
+}
+
