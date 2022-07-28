@@ -1,13 +1,35 @@
+@use 'abstracts/variables' as v;
+
 .active {
-    display: block;
+	display: block;
 }
 
 .inactive {
-    display: none;
+	display: none;
 }
 
 .nav__mobile-icon {
+	position: fixed;
+	right: 1.57rem;
+	top: 2.633rem;
+}
+
+.nav__mobile {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100vh;
+
+    background-color: v.$neutral-850;
+}
+
+.nav__mobile-ul {
     position: fixed;
-    right: 1.57rem;
-    top: 2.633rem;
+    top: 6.25rem;
+    left: 1.5rem;
+	width: 20.625rem;
+
+    text-align: center;
 }
