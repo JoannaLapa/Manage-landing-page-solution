@@ -52,3 +52,12 @@
     display: none;
 }
 }
+
+.nav__desktop {
+	display: none;
+
+	@include b.respond-to('small') {
+		display: block;
+	}
+
+}
