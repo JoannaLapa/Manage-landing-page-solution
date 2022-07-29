@@ -9,4 +9,7 @@
 
 .button__header {
     display: none;
+    @include b.respond-to('small') {
+       display:  block;
+    }
     }
