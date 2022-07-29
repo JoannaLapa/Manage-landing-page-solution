@@ -1,4 +1,5 @@
 @use 'abstracts/variables' as v;
+@use 'abstracts/breakpoints' as b;
 
 .active {
 	display: block;
@@ -14,22 +15,40 @@
 	top: 2.633rem;
 }
 
-.nav__mobile {
-    position: absolute;
-    top: 0;
-    left: 0;
+// .nav__mobile { // style do nav__mobile gdy była klasą dla nawigacji i obok miała nav__desktop - chyba nie będą potrzebne 
+// 	position: absolute;
+// 	top: 0;
+// 	left: 0;
 
-    width: 100%;
-    height: 100vh;
-
-    background-color: v.$neutral-850;
-}
+// 	width: 100%;
+// 	height: 100vh;
+// }
 
 .nav__mobile-ul {
-    position: fixed;
-    top: 6.25rem;
-    left: 1.5rem;
+	position: fixed;
+	top: 6.25rem;
+	left: 1.5rem;
 	width: 20.625rem;
 
-    text-align: center;
+	text-align: center;
+
+	z-index: 10;
+}
+
+.nav__mobile-li {
+	display: flex;
+	flex-direction: column;
+	gap: 1.4375rem;
+}
+
+.nav__mobile-bg {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+}
+
+.nav__mobile {
+@include b.respond-to('small') {
+    display: none;
+}
 }
