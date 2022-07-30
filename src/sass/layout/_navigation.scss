@@ -57,7 +57,14 @@
 	display: none;
 
 	@include b.respond-to('small') {
-		display: block;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
 	}
 
+}
+
+.nav__desktop-li {
+	display: flex;
+	gap: 1.875rem;
 }

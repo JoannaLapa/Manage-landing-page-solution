@@ -5,9 +5,20 @@
 	justify-content: space-between;
 	grid-template-columns: repeat(2, 1fr);
 
+
 	@include b.respond-to('small') {
-		grid-template-columns: repeat(3, 1fr);
+		grid-template-columns: 9.0625rem 1fr;
+		grid-template-rows: 4.875rem;
+		gap: 13.125rem;
+		align-items: center;
+	
 	}
+}
+
+nav {
+	display: grid;
+	grid-template-columns: 25rem 1fr;
+	gap: 13.75rem;
 }
 
 .even-columns {

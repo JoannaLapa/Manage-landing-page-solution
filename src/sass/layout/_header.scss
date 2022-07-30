@@ -1,15 +1,16 @@
 @use 'abstracts/breakpoints' as b;
 .logo {
-    width: 67%;
+    width: 7.3125rem;
 
-    @include b.respond-to('small') {
-        width: 21%;
+    @include b.respond-to('large') {
+        width: 9.375rem;
     }
 }
 
 .button__header {
     display: none;
     @include b.respond-to('small') {
-       display:  block;
+       display:  flex;
+       justify-self: flex-end;
     }
     }
