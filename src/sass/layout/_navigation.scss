@@ -66,5 +66,5 @@
 
 .nav__desktop-li {
 	display: flex;
-	gap: 1.875rem;
+	gap: clamp(0.625rem,  .9375rem, 1.875rem);
 }

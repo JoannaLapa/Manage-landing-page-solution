@@ -6,7 +6,7 @@
 	grid-template-columns: repeat(2, 1fr);
 
 
-	@include b.respond-to('small') {
+	@include b.respond-to('extra-large') {
 		grid-template-columns: 9.0625rem 1fr;
 		grid-template-rows: 4.875rem;
 		gap: 13.125rem;
@@ -18,7 +18,10 @@
 nav {
 	display: grid;
 	grid-template-columns: 25rem 1fr;
+
+	@include b.respond-to('extra-large'){
 	gap: 13.75rem;
+	}
 }
 
 .even-columns {
