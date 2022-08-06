@@ -1,15 +1,12 @@
 @use 'abstracts/breakpoints' as b;
 .logo {
-    width: 7.3125rem;
-
-    @include b.respond-to('large') {
-        width: 9.375rem;
-    }
+    padding-top: 6px;
+    width: clamp(7.3125rem, 7.3125rem + 8vw, 9.375rem);
 }
 
 .button__header {
     display: none;
-    @include b.respond-to('small') {
+    @include b.respond-to('medium') {
        display:  flex;
        justify-self: flex-end;
     }

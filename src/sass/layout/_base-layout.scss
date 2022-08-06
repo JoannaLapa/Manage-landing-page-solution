@@ -24,6 +24,10 @@
 }
 .padding__block--3 {
     padding-block: 2.75rem;
+
+    @include b.respond-to('extra-large') {
+        padding-block: 2.5625rem;
+    }
 }
 
 .padding__block--4 {
@@ -40,6 +44,10 @@
 
 .padding__inline--2 {
     padding-inline: 1.5rem;
+
+    @include b.respond-to('extra-large') {
+        padding-inline: 27px;
+    }
 }
 
 .padding__inline--3 {
