@@ -12,6 +12,16 @@
 		height: 100%;
     }
 }
+
+p[data-width="narrow"] {
+	padding-inline: 1.5rem;
+
+	@include b.respond-to('medium') {
+		padding-inline: 0;
+		max-width: 21.25rem;
+	}
+}
+
 .advantages__list {
 	display: grid;
 	grid-template-columns: 1fr;

@@ -20,15 +20,17 @@
 	@include b.respond-to('medium') {
 		grid-template-columns: repeat(auto-fit, minmax(10.3125rem, 35vw));
 		justify-content: space-between;
+
+        &[data-order='revert'] {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+    
+            min-height: 30.4375rem;
+        }
 	}
 
-	&[data-order='revert'] {
-		display: flex;
-		flex-direction: row-reverse;
-		justify-content: space-between;
-
-        min-height: 30.4375rem;
-	}
+	
 }
 
 .even-columns__box {
@@ -37,13 +39,17 @@
 	gap: 0.47rem;
 	justify-items: center;
 
-	&[data-order='revert--two'] {
-		flex-shrink: 0;
-        flex-basis: auto;
-		gap: 0;
-		width: 52%;
-        height: 100%;
-	}
+    @include b.respond-to('medium') {
+        justify-items: start;
+
+        &[data-order='revert--two'] {
+            flex-shrink: 0;
+            flex-basis: auto;
+            gap: 0;
+            width: 52%;
+            height: 100%;
+        }
+    }
 }
 
 //UTILITY CLASSES
