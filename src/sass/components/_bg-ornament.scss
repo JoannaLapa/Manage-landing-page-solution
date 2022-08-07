@@ -22,6 +22,9 @@
 .bg-ornament--extra-small {
 	right: -30px;
 	height: 2.375rem;
+	grid-column: 1 / -1;
+	grid-row: 1;
+	
 	width: 100%;
 
 	border-top-left-radius: 10em;

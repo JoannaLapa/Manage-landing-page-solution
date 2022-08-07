@@ -11,6 +11,14 @@
     
 }
 //UTILITY CLASSES
+.active {
+	display: block;
+}
+
+.inactive {
+	display: none;
+}
+
 .padding__block--1 {
     padding-block: 0.4rem;
 }
@@ -26,7 +34,7 @@
     padding-block: 2.75rem;
 
     @include b.respond-to('extra-large') {
-        padding-block: 2.5625rem;
+        padding-block: 58px;
     }
 }
 
@@ -44,10 +52,6 @@
 
 .padding__inline--2 {
     padding-inline: 1.5rem;
-
-    @include b.respond-to('extra-large') {
-        padding-inline: 27px;
-    }
 }
 
 .padding__inline--3 {

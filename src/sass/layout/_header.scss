@@ -1,4 +1,11 @@
 @use 'abstracts/breakpoints' as b;
+
+.header__container {
+	display: flex;
+	justify-content: space-between;
+    row-gap: 3vw;
+}
+
 .logo {
     padding-top: 6px;
     width: clamp(7.3125rem, 7.3125rem + 8vw, 9.375rem);
@@ -8,6 +15,5 @@
     display: none;
     @include b.respond-to('medium') {
        display:  flex;
-       justify-self: flex-end;
     }
     }

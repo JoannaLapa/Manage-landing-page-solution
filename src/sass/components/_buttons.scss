@@ -30,7 +30,9 @@
 }
 .button-styled-component {
 	display: inline-block;
-
+	grid-column: 1;
+	grid-row: 1;
+	
 	height: 2.375rem;
 	width: 4.0625rem;
 
