@@ -6,6 +6,10 @@
 	display: grid;
 	grid-template-columns: 1fr;
 	gap: 0.3125rem;
+
+    @include b.respond-to('medium') {
+        grid-auto-flow: column;
+    }
 }
 
 .even-columns__box {
