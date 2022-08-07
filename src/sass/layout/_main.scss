@@ -8,7 +8,8 @@
     width: 85.8vw;
 
     @include b.respond-to('medium') {
-        width: 37.5vw;
+        width: 100%;
+		height: 100%;
     }
 }
 .advantages__list {
