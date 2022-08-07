@@ -10,6 +10,26 @@
         max-width: 80.5%;
     }
 }
+
+.even-columns {
+	display: grid;
+	grid-template-columns: 1fr;
+  
+	gap: 0.3125rem;
+
+    @include b.respond-to('medium') {
+        grid-template-columns: repeat(auto-fit, minmax(10.3125rem, 35vw));
+        justify-content: space-between;
+    }
+}
+
+.even-columns__box {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 0.47rem;
+	justify-items: center;
+}
+
 //UTILITY CLASSES
 .active {
 	display: block;
