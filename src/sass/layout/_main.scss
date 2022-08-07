@@ -5,10 +5,12 @@
 .even-columns {
 	display: grid;
 	grid-template-columns: 1fr;
+  
 	gap: 0.3125rem;
 
     @include b.respond-to('medium') {
-        grid-auto-flow: column;
+        grid-template-columns: repeat(auto-fit, minmax(10.3125rem, 35vw));
+        justify-content: space-between;
     }
 }
 
@@ -19,6 +21,13 @@
 	justify-items: center;
 }
 
+.intro-img {
+    width: 85.8vw;
+
+    @include b.respond-to('medium') {
+        width: 37.5vw;
+    }
+}
 .advantages__list {
 	display: grid;
 	grid-template-columns: 1fr;

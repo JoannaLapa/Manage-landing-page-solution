@@ -1,14 +1,14 @@
 @use 'abstracts/breakpoints' as b;
 
 .container {
-    display: flex;
+    // display: flex;
     align-items: center;
     justify-content: center;
 
     margin: 0 auto; 
-    max-width: 72.5rem;
-
-    
+    @include b.respond-to('large') {
+        max-width: 80.5%;
+    }
 }
 //UTILITY CLASSES
 .active {
