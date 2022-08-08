@@ -1,7 +1,7 @@
 @use 'abstracts/breakpoints' as b;
 
 .container {
-	// display: flex;
+	display: grid;
 	align-items: center;
 	justify-content: center;
 
@@ -18,19 +18,23 @@
 	gap: 0.3125rem;
 
 	@include b.respond-to('medium') {
-		grid-template-columns: repeat(auto-fit, minmax(10.3125rem, 35vw));
-		justify-content: space-between;
+		// grid-template-columns: repeat(auto-fit, minmax(10.3125rem, 36.5vw));
+		grid-template-columns: 33.5vw 40vw;
+		grid-template-rows: repeat(auto-fit, minmax(23.3vh, 30.4375rem));
+		place-items: center stretch;
+		gap: 6vw;
 
-        &[data-order='revert'] {
-            display: flex;
-            flex-direction: row-reverse;
-            justify-content: space-between;
-    
-            min-height: 30.4375rem;
-        }
+		// &[data-order='revert'] {
+		// //     display: flex;
+		// //     flex-direction: row-reverse;
+		// //     justify-content: space-between;
+		// // 	align-items: center;
+		// // 	gap: 3.9375rem;
+
+		// //     min-height: 30.4375rem;
+		// // padding-block: 3rem 2.6875rem;
+		// }
 	}
-
-	
 }
 
 .even-columns__box {
@@ -39,17 +43,21 @@
 	gap: 0.47rem;
 	justify-items: center;
 
-    @include b.respond-to('medium') {
-        justify-items: start;
+	@include b.respond-to('medium') {
+		justify-items: start;
+		align-items: end;
+		&[data-order='revert--two'] {
+			grid-area: 1/2/2/3;
+		}
 
-        &[data-order='revert--two'] {
-            flex-shrink: 0;
-            flex-basis: auto;
-            gap: 0;
-            width: 52%;
-            height: 100%;
-        }
-    }
+		&[data-order='revert--one'] {
+			grid-template-rows: repeat(autofit, minmax(49%, 23.875rem));
+			grid-area: 1/1/2/2;
+			gap: 1.875rem;
+
+			padding-left: 1.1875rem;
+		}
+	}
 }
 
 //UTILITY CLASSES
@@ -76,12 +84,16 @@
 	padding-block: 2.75rem;
 
 	@include b.respond-to('extra-large') {
-		padding-block: 58px;
+		padding-block: 3.625rem;
 	}
 }
 
 .padding__block--4 {
 	padding-block: 4.375rem 0;
+
+	@include b.respond-to('medium') {
+		padding-block: 3.125rem 0;
+	}
 }
 
 .padding__block--5 {
@@ -90,10 +102,26 @@
 
 .padding__inline--1 {
 	padding-inline: 1.0625rem;
+
+	@include b.respond-to('medium') {
+		padding-inline: 1.1875rem;
+	}
 }
 
 .padding__inline--2 {
 	padding-inline: 1.5rem;
+
+	@include b.respond-to('medium') {
+		padding-inline: 1.25rem;
+	}
+}
+
+.padding__inline--2-0 {
+	padding-inline: 1.5rem;
+
+	@include b.respond-to('medium') {
+		padding-inline: 0.3125rem;
+	}
 }
 
 .padding__inline--3 {
@@ -106,4 +134,8 @@
 
 .margin-block-1 {
 	margin-block: 1.48rem;
+
+	@include b.respond-to('medium') {
+		margin-block: 0.3125rem;
+	}
 }

@@ -66,7 +66,8 @@ body {
 
 	@include b.respond-to('medium') {
 		font-size: v.$fs-850;
-		line-height: 1.25;
+		line-height: 1.24;
+		letter-spacing: -0.0313rem;
 
 		text-align: left;
 	}
@@ -78,6 +79,11 @@ body {
 	letter-spacing: -1px;
 
 	text-align: center;
+
+	@include b.respond-to('medium') {
+		font-size: v.$fs-800;
+		text-align: left;
+	}
 }
 
 .third-heading {
