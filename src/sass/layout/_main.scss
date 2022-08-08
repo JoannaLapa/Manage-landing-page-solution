@@ -37,11 +37,12 @@ p[data-width="narrow"] {
 
 	@include b.respond-to('medium') {
 		grid-template-columns: 4.375rem minmax(30%, 28.125rem);
-		grid-template-rows: 2.5rem 5.9375rem;
 		column-gap: 1.5625rem;
 	}
 
-	
+	@include b.respond-to('large') {
+		grid-template-rows: 2.5rem 5.9375rem;
+	}
 }
 
 .advantages__item h3 {
@@ -52,7 +53,7 @@ p[data-width="narrow"] {
 .advantages__item p {
 	grid-column: 1 / -1;
 
-	@include b.respond-to('medium') {
+	@include b.respond-to('large') {
 		grid-column: 2;
 		grid-row: 2;
 	}
