@@ -33,6 +33,11 @@ body {
 .paragraph__font-size--400 {
 	font-size: v.$fs-400;
 	line-height: 1.95;
+
+	@include b.respond-to('medium') {
+		font-size: v.$fs-600;
+		line-height: 1.5;
+	}
 }
 
 .paragraph__typography--common {
@@ -74,6 +79,8 @@ body {
 }
 
 .secondary-heading {
+	padding-inline: 1.5rem;
+
 	font-size: v.$fs-700;
 	line-height: 1.45;
 	letter-spacing: -1px;
@@ -81,7 +88,12 @@ body {
 	text-align: center;
 
 	@include b.respond-to('medium') {
-		font-size: v.$fs-800;
+		padding-inline: 0;
+
+		font-size: v.$fs-830;
+		
+		letter-spacing: -0.5px;
+line-height: 1.2;
 		text-align: left;
 	}
 }
