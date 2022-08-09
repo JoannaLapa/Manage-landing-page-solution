@@ -20,11 +20,14 @@
 
         <nav>
             <div class="nav__mobile">
-                <img class="nav__mobile-icon" src="src/img/icon-hamburger.svg" alt="click to open the menu">
-                <img class="nav__mobile-icon inactive" src="src/img/icon-close.svg" alt="click to close the menu">
+                <button class="nav__mobile-toggle-button" aria-controls="primary-navigation">
+                    <span class="nav__mobile-sr--visually-hidden">Menu</span>
+                    <img class="nav__mobile-icon" src="src/img/icon-hamburger.svg" alt="click to open the menu">
+                    <img class="nav__mobile-icon inactive" src="src/img/icon-close.svg" alt="click to close the menu">
+                </button>
                 <div class="nav__mobile-bg bg-neutral-850 translate--200"></div>
                 <div class="nav__mobile-ul padding__block--3 bg-neutral-100 padding__inline--2 active  translate--200">
-                    <ul class="text-primary-900 fw-semi-bold nav__mobile-li translate--200" role="list">
+                    <ul class="text-primary-900 fw-semi-bold nav__mobile-li translate--200" role="list" id="primary-navigation">
                         <li><a href="#"></a>Pricing</li>
                         <li><a href="#"></a>Product</li>
                         <li><a href="#"></a>About Us</li>
@@ -135,7 +138,7 @@
 
     <section>
 
-        <div class="slider__section-container padding__block--2 padding__inline--1">
+        <div class="slider__section-container padding__inline--1">
 
             <h2 class="secondary-heading text-primary-900 fw-bold letter-spacing-normal">What they’ve said</h2>
 
@@ -205,9 +208,6 @@
         <div class="container padding__block--5 padding__inline--3 even-columns">
 
             <div class="even-columns__box">
-                <!-- <div class="bg-ornament__box">
-                    <img src="src/img/bg-simplify-section-mobile.svg" alt="">
-                </div> -->
                 <p class="paragraph__font-size--800 fw-bold text-neutral-100">Simplify how your team works today.</p>
             </div>
             <div class="even-columns__box padding__block--2">
