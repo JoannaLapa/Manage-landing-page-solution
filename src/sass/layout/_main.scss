@@ -1,24 +1,27 @@
 @use 'abstracts/variables' as v;
 @use 'abstracts/breakpoints' as b;
 
-
-
-
 .intro-img {
-    width: 85.8vw;
+	width: 85.8vw;
 
-    @include b.respond-to('medium') {
-        width: 100%;
+	@include b.respond-to('medium') {
+		width: 100%;
 		height: 100%;
-    }
+	}
 }
 
-p[data-width="narrow"] {
+p[data-width='narrow'] {
 	padding-inline: 1.5rem;
 
 	@include b.respond-to('medium') {
 		padding-inline: 0;
 		max-width: 21.25rem;
+	}
+}
+
+p[data-width='narrow--200'] {
+	@include b.respond-to('medium') {
+		max-width: 27.5rem;
 	}
 }
 
@@ -71,5 +74,15 @@ p[data-width="narrow"] {
 
 	@include b.respond-to('medium') {
 		gap: 1.5625rem;
+	}
+}
+
+.even-columns__cta {
+	padding-block: 5.9375rem 3.875rem;
+	
+	@include b.respond-to('medium') {
+		grid-template-columns: 67.36vw 1fr;
+		align-items: center;
+		padding-block: 4.0625rem;
 	}
 }

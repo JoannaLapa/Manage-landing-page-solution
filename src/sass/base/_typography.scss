@@ -23,6 +23,13 @@ body {
 	font-size: v.$fs-800;
 	line-height: 1.4;
 	text-align: center;
+
+	@include b.respond-to('medium') {
+		font-size: v.$fs-830;
+		letter-spacing: -0.6px;
+		line-height: 1.2;
+		text-align: left;
+	}
 }
 
 .paragraph__font-size--600 {
@@ -107,6 +114,10 @@ body {
 
 .letter-spacing-normal {
 	letter-spacing: normal;
+}
+
+.text__align--center {
+	text-align: center;
 }
 
 .attribution {

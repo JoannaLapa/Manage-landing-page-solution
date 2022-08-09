@@ -12,12 +12,15 @@
 	}
 }
 
-.even-columns {
+.even-columns,
+.even-columns__cta,
+.even-columns__footer  {
 	display: grid;
 	grid-template-columns: 1fr;
 
 	gap: 0.3125rem;
-
+}
+.even-columns {
 	@include b.respond-to('medium') {
 		grid-template-columns: 33.5vw 40vw;
 		grid-template-rows: repeat(auto-fit, minmax(23.3vh, 30.4375rem));
@@ -37,11 +40,11 @@
 		justify-items: start;
 		gap: 1.4375rem;
 
-		&[data-order='revert--two'] {
+		&[data-order='second'] {
 			grid-area: 1/2/2/3;
 		}
 
-		&[data-order='revert--one'] {
+		&[data-order='first'] {
 			grid-area: 1/1/2/2;
 			gap: 1.875rem;
 			align-items: end;
@@ -122,9 +125,6 @@
 		padding-left: 1.1875rem;
 	}
 }
-.text__align--center {
-	text-align: center;
-}
 
 .margin-block-1 {
 	margin-block: 1.48rem;
@@ -137,3 +137,5 @@
 .align-items-start-md {
 	align-items: start;
 }
+
+
