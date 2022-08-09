@@ -1,45 +1,56 @@
 @use 'abstracts/breakpoints' as b;
 
-.nav__mobile-icon {
-	position: fixed;
-	right: 1.57rem;
-	top: 2.633rem;
-}
-
-.nav__mobile-ul {
-	position: fixed;
-	top: 6.25rem;
-	left: 1.5rem;
-	width: 20.625rem;
-
-	text-align: center;
-
-	z-index: 10;
-}
-
-.nav__mobile-li {
-	display: flex;
-	flex-direction: column;
-	gap: 1.4375rem;
-}
-
-.nav__mobile-bg {
-	position: fixed;
-	width: 100%;
-	height: 100vh;
-}
-
 .nav__mobile {
 	@include b.respond-to('medium') {
 		display: none;
 	}
-}
 
+	&-toggle-button {
+		padding: 0.5em;
+		
+		border: transparent;
+		background: transparent;
+
+		cursor: pointer;
+	}
+
+	&-sr--visually-hidden {
+		opacity: 0;
+	}
+	&-icon {
+		position: fixed;
+		right: 1.57rem;
+		top: 2.633rem;
+	}
+
+	&-ul {
+		position: fixed;
+		top: 6.25rem;
+		left: 1.5rem;
+		width: 20.625rem;
+
+		text-align: center;
+
+		z-index: 10;
+	}
+
+	&-li {
+		display: flex;
+		flex-direction: column;
+		gap: 1.4375rem;
+	}
+
+	&-bg {
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+	}
+}
 .nav__desktop {
 	display: none;
 
 	@include b.respond-to('medium') {
-		display: block; 
+		display: block;
 	}
 }
 
@@ -51,8 +62,8 @@
 }
 
 .footer__nav-ul {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
 	column-gap: 5rem;
 	row-gap: 1rem;
 }

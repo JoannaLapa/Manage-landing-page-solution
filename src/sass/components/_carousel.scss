@@ -1,23 +1,31 @@
 @use 'abstracts/variables' as v;
+@use 'abstracts/breakpoints' as b;
 
 .slider {
 	&__section-container {
 		display: grid;
-		grid-template-rows: 50px 315px 30px 1fr;
+		grid-template-rows: 3.125rem 19.6875rem 1.875rem 1fr;
 		gap: 1.5rem;
 		align-items: start;
 		justify-items: center;
+
 		min-height: 35.9375rem;
+		padding-block: 1.375rem;
 
 		h2 {
 			grid-row: 1;
+		}
+
+		@include b.respond-to('medium') {
+			padding-block: 8.3125rem;
+			gap: 2.25rem;
 		}
 	}
 	&__container {
 		position: relative;
 
 		display: grid;
-		grid-template-columns: repeat(4, 1fr);
+		grid-template-columns: repeat(4, 33.5rem);
 		grid-row: 2;
 
 		width: 100%;
@@ -26,18 +34,27 @@
 
 		/* IN THE END */
 		overflow: hidden;
+
+		@include b.respond-to('medium') {
+			column-gap: 1.875rem;
+		}
 	}
 
 	&__slide {
-		position: absolute;
+		position: relative;
 		top: calc(2.34rem + 1.8rem);
 		display: grid;
 		grid-template-rows: 5rem 1fr;
 		gap: 1.4375rem;
+		justify-items: center;
 		width: 100%;
 		min-height: 15.625rem;
 
 		background-color: v.$neutral-250;
+
+		@include b.respond-to('medium') {
+			width: 33.5rem;
+		}
 	}
 
 	&__person-details-box {
@@ -70,6 +87,8 @@
 
 		width: 4.5rem;
 		height: 4.5rem;
+
+		z-index: 10;
 	}
 
 	&__blockquote {
@@ -79,21 +98,44 @@
 		text-align: center;
 		font-size: v.$fs-400;
 		line-height: 1.85;
+
+		@include b.respond-to('medium') {
+			padding-inline: 35px 2.375rem;
+
+			font-size: v.$fs-600;
+			line-height: 1.65;
+		}
 	}
 }
 
 .translate--0 {
 	transform: translateX(0%);
+
+	@include b.respond-to('medium') {
+		transform: translateX(-25%);
+	}
 }
 
 .translate--minus-100 {
 	transform: translateX(-100%);
+
+	@include b.respond-to('medium') {
+		transform: translateX(-25%);
+	}
 }
 .translate--100 {
 	transform: translateX(100%);
+
+	@include b.respond-to('medium') {
+		transform: translateX(-25%);
+	}
 }
 .translate--200 {
 	transform: translateX(200%);
+
+	@include b.respond-to('medium') {
+		transform: translateX(-25%);
+	}
 }
 
 .dots {
@@ -110,5 +152,9 @@
 		background-color: v.$neutral-100;
 		border: 1px solid v.$primary-400;
 		border-radius: 50%;
+	}
+
+	@include b.respond-to('medium') {
+		display: none;
 	}
 }
