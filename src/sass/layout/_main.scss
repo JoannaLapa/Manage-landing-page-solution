@@ -25,32 +25,36 @@ p[data-width='narrow--200'] {
 	}
 }
 
+// ADVANTAGES LIST
+
 .advantages__list {
 	display: grid;
 	grid-template-columns: 1fr;
 	gap: 2.85rem;
+	margin-inline: auto;
+	width: fit-content;
+
+	counter-reset: count;
 }
 
 .advantages__item {
 	display: grid;
-	grid-template-columns: 1fr;
+	grid-template-columns: min-content minmax(30%, 28.125rem);
 	gap: 0.8rem;
+
+	counter-increment: count; 
 
 	align-items: start;
 
 	@include b.respond-to('medium') {
-		grid-template-columns: 4.375rem minmax(30%, 28.125rem);
 		column-gap: 1.5625rem;
-	}
-
-	@include b.respond-to('large') {
-		grid-template-rows: 2.5rem 5.9375rem;
 	}
 }
 
 .advantages__item h3 {
 	grid-column: 2;
 	grid-row: 1;
+	align-self: center;
 }
 
 .advantages__item p {
@@ -62,20 +66,59 @@ p[data-width='narrow--200'] {
 	}
 }
 
-.advantages__item-title {
-	display: grid;
-	grid-template-columns: 4.375rem 1fr;
-	grid-template-rows: 2.375rem;
-	grid-column: 1 / -1;
-	grid-row: 1;
-	gap: 0.78rem;
-	justify-items: start;
-	align-items: center;
+.advantages__item::before,
+.advantages__item::after {
+	height: 3.125rem;
 
-	@include b.respond-to('medium') {
-		gap: 1.5625rem;
+	@include b.respond-to('extra-small') {
+		height: 2.375rem;;
 	}
 }
+
+.advantages__item::before {
+	content: '0' counter(count);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	grid-column: 1;
+	grid-row: 1;
+	
+	width: 4.0625rem;
+
+	border-radius: 30rem;
+	border: 0.0625rem solid transparent;
+	background-color: v.$primary-400;
+	color: v.$neutral-200;
+
+	font-size: v.$fs-300;
+	letter-spacing: -1px;
+}
+
+.advantages__item::after {
+	content: '';
+	grid-column: 1 / -1;
+	grid-row: 1;
+
+	width: 100%;
+
+	border-top-left-radius: 10em;
+	border-bottom-left-radius: 10em;
+	background-color: v.$neutral-200;
+	box-shadow: 1.5625rem 0 0 v.$neutral-200;
+
+	z-index: -5;
+	overflow: hidden;
+
+	@include b.respond-to('small') {
+		display: none;
+	}
+}
+
+.flow {
+	width: fit-content;
+	margin-inline: auto;
+}
+// CTA
 
 .even-columns__cta {
 	padding-block: 5.9375rem 3.875rem;
