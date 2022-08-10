@@ -1,26 +1,72 @@
+@use 'abstracts/breakpoints' as b;
+
 .footer__form {
-    display: flex;
+    display: grid;
+    grid-template-columns: 73.45% 1fr;
     gap: 0.5rem;
+    grid-column: 1 / -1;
+   
+    width: 100%;
 }
 
 .footer__input {
-	width: 15rem;
+	width: 100%;
 }
 
 .footer__social-media-ul {
     display: flex;
     gap: 2.0625rem;
 
+    @include b.respond-to('medium') {
+        gap: .8125rem;
+        justify-items: stretch;
+        align-self: end;
+    }
+
+    @include b.respond-to('large') {
+        grid-row: 2/3;
+    }
+
     img {
         width: 2.125rem;
         height: 2.125rem;
+
+        @include b.respond-to('medium') {
+            width: 1.25rem;
+            height: 1.25rem;
+        }
+    }
+}
+
+.even-columns__footer {
+    row-gap: 2.75rem;
+	@include b.respond-to('large') {
+		grid-template-columns: 14.5% 39% 25%;
+        justify-content: space-between;
+        align-items: start;
+        gap: 8.4vw;
+
+        width: 77vw;
+        padding-left: .3125rem;
+	}
+
+    a{
+    @include b.respond-to('large') {
+        grid-row: 1/2;
+    }
+}
+}
+
+.footer__logo {
+    padding-block: 2.75rem;
+
+    @include b.respond-to('medium') {
+        padding-block: 0 3.5rem;
     }
 }
 
 
-
 .attribution{
-    padding-bottom: 1rem;
 
     height: 2rem;
 }

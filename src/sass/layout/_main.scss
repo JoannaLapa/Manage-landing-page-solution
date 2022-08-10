@@ -79,10 +79,11 @@ p[data-width='narrow--200'] {
 
 .even-columns__cta {
 	padding-block: 5.9375rem 3.875rem;
-	
+
 	@include b.respond-to('medium') {
 		grid-template-columns: 67.36vw 1fr;
 		align-items: center;
 		padding-block: 4.0625rem;
 	}
 }
+

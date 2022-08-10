@@ -65,5 +65,11 @@
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	column-gap: 5rem;
-	row-gap: 1rem;
+	row-gap: 1rem; 
+
+	@include b.respond-to('extra-large') {
+		column-gap: 13.3vw;
+		row-gap: .875rem;
+		padding-top: .3125rem;
+	}
 }

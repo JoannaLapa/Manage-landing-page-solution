@@ -11,11 +11,7 @@ body {
 	font-size: v.$fs-400;
 }
 
-.fs-nav {
-	font-size: v.$fs-300;
-}
-
-.fs-button {
+.fs-300 {
 	font-size: v.$fs-300;
 }
 
@@ -133,4 +129,5 @@ body {
 
 .footer__nav-ul {
 	font-size: v.$fs-400;
+	text-align: left;
 }

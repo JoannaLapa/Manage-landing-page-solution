@@ -7,6 +7,8 @@
 .footer__input {
 	border-radius: 30rem;
 	border: 0.0625rem solid transparent;
+
+	font-size: v.$fs-300;
 }
 
 .button--white,
@@ -40,6 +42,6 @@
 }
 
 .button--small {
-	width: 5.3125rem;
+	width:clamp(4.125rem , 4.58vw, 5.3125rem);
 }
 
