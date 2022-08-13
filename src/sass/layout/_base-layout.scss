@@ -5,7 +5,7 @@
 	align-items: center;
 	justify-content: center;
 
-	margin: 0 auto;
+	margin-inline: auto;
 	@include b.respond-to('large') {
 		max-width: 80.5%;
 	}
@@ -161,4 +161,14 @@ p[data-order='third--2'] {
 	@include b.respond-to('medium'){
 	justify-self: start
 }
+}
+
+.justify-content-space-between {
+	justify-content: space-between;
+}
+
+.display-min-md {
+	@include b.respond-to-max('medium') {
+display: none;
+	}
 }

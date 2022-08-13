@@ -14,42 +14,30 @@
 
 <body>
   <header>
-    <div class="container header__container padding__inline--2 padding__block--3">
+    <div class="header__container">
 
         <a href="#"><img class="logo" src="src/img/logo.svg" alt="Manage - company logo"></a>
 
-        <nav>
-            <div class="nav__mobile">
-                <button class="nav__mobile-toggle-button" aria-controls="primary-navigation">
-                    <span class="nav__mobile-sr--visually-hidden">Menu</span>
-                    <img class="nav__mobile-icon" src="src/img/icon-hamburger.svg" alt="click to open the menu">
-                    <img class="nav__mobile-icon inactive" src="src/img/icon-close.svg" alt="click to close the menu">
-                </button>
-                <div class="nav__mobile-bg bg-neutral-850 translate--200"></div>
-                <div class="nav__mobile-ul padding__block--3 bg-neutral-100 padding__inline--2 active  translate--200">
-                    <ul class="text-primary-900 fw-semi-bold nav__mobile-li translate--200" role="list" id="primary-navigation">
-                        <li><a href="#"></a>Pricing</li>
-                        <li><a href="#"></a>Product</li>
-                        <li><a href="#"></a>About Us</li>
-                        <li><a href="#"></a>Careers</li>
-                        <li><a href="#"></a>Community</li>
-                    </ul>
-                </div>
-            </div>
+        <div class="primary-nav__wrapper">
+            <button class="nav__mobile-toggle-button" aria-controls="primary-navigation" aria-expanded="false">
+                <img class="nav__mobile-icon" src="src/img/icon-hamburger.svg" alt="" aria-hidden="true">
+                <img class="nav__mobile-icon inactive" src="src/img/icon-close.svg" alt="" aria-hidden="true">
+                <span class="sr--visually-hidden">Menu</span>
+            </button>
+            <nav class="primary-nav">
 
-            <div class="nav__desktop">
-                <ul class="text-primary-900 fw-bold nav__desktop-li fs-200" role="list">
+                <ul class="text-primary-900 primary-nav__ul" role="list" id="primary-navigation">
                     <li><a href="#"></a>Pricing</li>
                     <li><a href="#"></a>Product</li>
                     <li><a href="#"></a>About Us</li>
                     <li><a href="#"></a>Careers</li>
                     <li><a href="#"></a>Community</li>
                 </ul>
-            </div>
-        </nav>
-        <div class="button__header">
-            <button class="button--orange fs-button text-neutral-200 bg-primary-400">Get Started</button>
+
         </div>
+        </nav>
+            <button class="button--orange display-min-md">Get Started</button>
+        </nav>
     </div>
 </header>
   <main>

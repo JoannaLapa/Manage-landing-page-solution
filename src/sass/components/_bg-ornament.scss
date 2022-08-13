@@ -20,25 +20,8 @@
 	height: 27.1875rem;
 }
 
-.bg-ornament--extra-small {
-	right: -30px;
-	height: 2.375rem;
-	grid-column: 1 / -1;
-	grid-row: 1;
-
-	width: 100%;
-
-	border-top-left-radius: 10em;
-	border-bottom-left-radius: 10em;
-
-	@include b.respond-to('medium') {
-		display: none;
-	}
-}
-
 .bg-ornament--big,
-.bg-ornament--small,
-.bg-ornament--extra-small {
+.bg-ornament--small{
 	position: absolute;
 
 	background-color: v.$neutral-200;

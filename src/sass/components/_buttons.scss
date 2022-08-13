@@ -15,7 +15,6 @@
 .button--orange,
 .button--small,
 .footer__input {
-	
 	height: 2.8125rem;
 
 	text-shadow: 0px 0px 1px rgba(255, 239, 235, 1);
@@ -29,10 +28,10 @@
 
 .button--orange {
 	box-shadow: 0 1.125em 1em -1em v.$primary-400;
+	color: v.$neutral-200;
+	background-color: v.$primary-400;
 }
-
 
 .button--small {
-	width:clamp(4.125rem , 4.58vw, 5.3125rem);
+	width: clamp(4.125rem, 4.58vw, 5.3125rem);
 }
-

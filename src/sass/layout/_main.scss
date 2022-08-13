@@ -31,8 +31,6 @@ p[data-width='narrow--200'] {
 	display: grid;
 	grid-template-columns: 1fr;
 	gap: 2.85rem;
-	margin-inline: auto;
-	width: fit-content;
 
 	counter-reset: count;
 }
@@ -104,20 +102,15 @@ p[data-width='narrow--200'] {
 	border-top-left-radius: 10em;
 	border-bottom-left-radius: 10em;
 	background-color: v.$neutral-200;
-	box-shadow: 1.5625rem 0 0 v.$neutral-200;
+	box-shadow: 5em 0 0 v.$neutral-200;
 
-	z-index: -5;
 	overflow: hidden;
-
+z-index: -5;
 	@include b.respond-to('small') {
 		display: none;
 	}
 }
 
-.flow {
-	width: fit-content;
-	margin-inline: auto;
-}
 // CTA
 
 .even-columns__cta {

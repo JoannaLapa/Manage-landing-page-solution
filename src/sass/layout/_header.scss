@@ -1,18 +1,54 @@
 @use 'abstracts/breakpoints' as b;
 
 .header__container {
-    display: flex;
+
+	@include b.respond-to-max('medium') {
+		&::before {
+			content: "";
+			position: fixed;
+			inset: 0;
+			height: 100vh;
+			background-image:  linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(29,30,37,1) 32%, rgba(29,30,37,1) 100%);
+			opacity: 0.3;
+			
+		  }
+	}
+	display: flex;
 	justify-content: space-between;
+	align-items: center;
+
+	margin-inline: auto;
+	padding-inline: 1.5rem;
+	padding-block: 2.75rem;
+
+	@include b.respond-to('medium') {
+		padding-inline: 1.4375rem;
+	}
+
+	@include b.respond-to('large') {
+		max-width: 80.5%;
+		padding-block: 3.625rem;
+	}
+
+	a {
+		align-self: center;
+
+@include b.respond-to('medium') {
+	padding-top: 6px;
+}
+
+	}
 }
 
 .logo {
-    padding-top: 6px;
-    width: clamp(7.3125rem, 7.3125rem + 8vw, 9.375rem);
+	// padding-top: 6px;
+	width: clamp(5rem, 5rem + 8vw, 9.375rem);
+
 }
 
 .button__header {
-    display: none;
-    @include b.respond-to('medium') {
-       display:  flex;
-    }
-    }
+	display: none;
+	@include b.respond-to('medium') {
+		display: flex;
+	}
+}
