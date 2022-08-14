@@ -22,6 +22,13 @@
 }
 
 .button--white,
+.button--orange,
+.advantages__item::before,
+.button--small {
+	font-weight: bold;
+}
+
+.button--white,
 .button--orange {
 	width: 8.625rem;
 }
@@ -34,4 +41,23 @@
 
 .button--small {
 	width: clamp(4.125rem, 4.58vw, 5.3125rem);
+}
+
+.button--orange,
+.button--small {
+	transition: background-color 0.3s;
+
+	&:hover,
+	&:focus-visible {
+		background-color: v.$primary-300;
+	}
+}
+
+.button--white {
+	transition: color 0.3s;
+
+	&:hover,
+	&:focus-visible {
+		color: v.$primary-300;
+	}
 }

@@ -20,10 +20,14 @@
 }
 .even-columns {
 	@include b.respond-to('medium') {
-		grid-template-columns: 33.5vw 40vw;
+		grid-template-columns: repeat(2, 1fr);
 		grid-template-rows: repeat(auto-fit, minmax(23.3vh, 30.4375rem));
 		place-items: center stretch;
 		gap: 6vw;
+	}
+
+	@include b.respond-to('extra-large') {
+		grid-template-columns: 33.5vw 40vw;
 	}
 }
 
@@ -92,7 +96,7 @@ p[data-order='third--2'] {
 .padding__block--4 {
 	padding-block: 4.375rem 0;
 
-	@include b.respond-to('medium') {
+	@include b.respond-to('extra-large') {
 		padding-block: 4.0625rem 0;
 	}
 }
@@ -104,7 +108,7 @@ p[data-order='third--2'] {
 .padding__inline--1 {
 	padding-inline: 1.0625rem;
 
-	@include b.respond-to('medium') {
+	@include b.respond-to('extra-large') {
 		padding-inline: 1.1875rem;
 	}
 }

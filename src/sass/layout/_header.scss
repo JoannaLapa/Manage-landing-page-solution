@@ -1,17 +1,21 @@
 @use 'abstracts/breakpoints' as b;
+@use 'abstracts/variables' as v;
 
 .header__container {
-
 	@include b.respond-to-max('medium') {
-		&::before {
-			content: "";
+		&[data-overlay]::before {
+			content: '';
 			position: fixed;
 			inset: 0;
 			height: 100vh;
-			background-image:  linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(29,30,37,1) 32%, rgba(29,30,37,1) 100%);
+			background-image: linear-gradient(
+				180deg,
+				rgba(255, 255, 255, 1) 0%,
+				rgba(29, 30, 37, 1) 32%,
+				rgba(29, 30, 37, 1) 100%
+			);
 			opacity: 0.3;
-			
-		  }
+		}
 	}
 	display: flex;
 	justify-content: space-between;
@@ -33,22 +37,34 @@
 	a {
 		align-self: center;
 
-@include b.respond-to('medium') {
-	padding-top: 6px;
-}
+		@include b.respond-to('medium') {
+			padding-top: 6px;
+		}
+	}
 
+	button {
+		position: relative;
+	}
+
+	button::before {
+		position: absolute;
+		top: 0;
+		right: 0;
+		transform: rotate(-135deg);
+
+		width: 15.3394rem;
+		height: 27.1875rem;
+
+		background-color: v.$neutral-200;
+		border-top-left-radius: 10em;
+		border-top-right-radius: 10em;
+
+		z-index: -5;
+		overflow: hidden;
 	}
 }
 
 .logo {
 	// padding-top: 6px;
 	width: clamp(5rem, 5rem + 8vw, 9.375rem);
-
-}
-
-.button__header {
-	display: none;
-	@include b.respond-to('medium') {
-		display: flex;
-	}
 }
