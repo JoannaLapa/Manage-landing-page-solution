@@ -14,6 +14,29 @@
 	width: 100%;
 }
 
+.footer__input--error {
+	border: 0.125rem solid v.$primary-400;
+}
+
+.footer__input--error::placeholder {
+	color: v.$primary-400;
+}
+
+.msgtext {
+	display: none;
+	padding-left: .9375rem;
+	padding-top: .3125rem;
+	color: v.$primary-400;
+
+	font-size: 10px;
+	font-style: italic;
+	letter-spacing: -0.5px;
+}
+
+.msgtext[data-visible='true'] {
+	display: block;
+}
+
 .footer {
 	&__social-media-ul {
 		display: flex;

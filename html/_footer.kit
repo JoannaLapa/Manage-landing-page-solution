@@ -3,7 +3,11 @@
         <div class="even-columns__footer padding__block--3">
             <div class="even-columns__box padding__block--1" data-order="third">
                 <form class="footer__form ">
-                    <div> <input class="footer__input" type="email" placeholder="Updates in your inbox…"></div>
+                    <div> <input class="footer__input" type="email" name="email" id="email"
+                          aria-describedBy="message" placeholder="Updates in your inbox…">
+                        <p class="msgtext" id="message">
+                            </p>
+                    </div>
                     <div><button class="fs-button text-neutral-200 bg-primary-400 button--small"
                             type="submit">Go</button></div>
                 </form>
@@ -24,7 +28,7 @@
             <div class="even-columns__box justify-self--start-md align-items--start-md" data-order="first">
                 <ul class="footer__social-media-ul" role="list" aria-label="social media links">
                     <li><a href="#" aria-label="facebook">
-                        <svg class="footer__social-media-icon">
+                            <svg class="footer__social-media-icon">
                                 <use xlink:href="src/img/social-icons.svg#icon-facebook"></use>
                             </svg></a></li>
                     <li><a href="#" aria-label="youtube"><svg class="footer__social-media-icon">
