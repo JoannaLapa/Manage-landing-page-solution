@@ -3,6 +3,8 @@
 
 .intro-img {
 	width: 85.8vw;
+	
+	z-index: -1000;
 
 	@include b.respond-to('medium') {
 		width: 100%;

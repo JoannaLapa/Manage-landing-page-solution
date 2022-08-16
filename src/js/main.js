@@ -4,9 +4,10 @@ const headerContainer = document.querySelector('.header__container')
 const openingIcon = document.querySelector('.nav__mobile-icon--open')
 const closingIcon = document.querySelector('.nav__mobile-icon--close')
 const footerInput = document.querySelector('.footer__input')
-const msgText = document.querySelector('.msgtext')
+const msgText = document.querySelector('.footer__input-msgtext ')
 const inputErrorStyles = document.querySelector('.footer__input--error')
 const submitButton = document.querySelector('.button--small')
+
 
 const switchMobileNavigation = () => {
 	headerContainer.hasAttribute('data-visible')
@@ -21,14 +22,12 @@ const switchMobileNavigation = () => {
 const makeIfCorrect = () => {
 	footerInput.classList.remove('footer__input--error')
 	msgText.textContent = 'Your email was added successfully!'
-	msgText.setAttribute('data-visible', 'true')
 	footerInput.setAttribute('aria-invalid', 'false')
 	footerInput.value = ''
 }
 
 const makeIfNotCorrect = () => {
 	msgText.textContent = 'Please insert a valid e-mail'
-	msgText.setAttribute('data-visible', 'true')
 	footerInput.classList.add('footer__input--error')
 	footerInput.setAttribute('aria-invalid', 'true')
 	footerInput.value = ''

@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <header>
+  <header class="header__section">
     <div class="header__container">
 
         <a href="#"><img class="logo" src="src/img/logo.svg" alt="Manage - company logo"></a>
@@ -40,10 +40,9 @@
         </nav>
     </div>
 </header>
-  <main>
+  <main class="main__section">
     <div class="container padding__inline--1">
         <section>
-            <div class="bg-ornament--big"></div>
             <div class="even-columns" data-order="revert">
                 <div class="even-columns__box align-items--start" data-order="second"><img class="intro-img"
                         src="src/img/illustration-intro.svg" alt="">
@@ -64,7 +63,6 @@
             </div>
         </section>
         <section>
-            <div class="bg-ornament--small"></div>
             <div class="even-columns align-items--start-md">
                 <div class="even-columns__box padding-left align-items--start">
                     <h2 class="secondary-heading text-primary-900 fw-bold  padding__block--4">
@@ -183,7 +181,7 @@
         </div>
     </section>
 
-    <section class="bg-primary-400 bg-ornament__container">
+    <section class="bg-primary-400 cta-section">
         <div class="container padding__inline--3 even-columns__cta">
 
             <div class="even-columns__box align-items--start" data-order="first">
@@ -204,8 +202,7 @@
                 <form class="footer__form ">
                     <div> <input class="footer__input" type="email" name="email" id="email"
                           aria-describedBy="message" placeholder="Updates in your inbox…">
-                        <p class="msgtext" id="message">
-                            </p>
+                        <p class="footer__input-msgtext " id="message"></p>
                     </div>
                     <div><button class="fs-button text-neutral-200 bg-primary-400 button--small"
                             type="submit">Go</button></div>

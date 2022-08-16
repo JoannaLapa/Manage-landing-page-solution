@@ -12,18 +12,22 @@
 
 .footer__input {
 	width: 100%;
+	padding-left: 20px;
+
+	color: v.$primary-400;
 }
 
 .footer__input--error {
 	border: 0.125rem solid v.$primary-400;
 }
 
-.footer__input--error::placeholder {
-	color: v.$primary-400;
+.footer__input::placeholder {
+	color: v.$neutral-900;
+
+	text-align: left;
 }
 
-.msgtext {
-	display: none;
+.footer__input-msgtext {
 	padding-left: .9375rem;
 	padding-top: .3125rem;
 	color: v.$primary-400;
@@ -31,10 +35,6 @@
 	font-size: 10px;
 	font-style: italic;
 	letter-spacing: -0.5px;
-}
-
-.msgtext[data-visible='true'] {
-	display: block;
 }
 
 .footer {
