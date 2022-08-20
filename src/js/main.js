@@ -1,3 +1,20 @@
+////////////////////////////////////////////
+// SLIDER
+const slider = new A11YSlider(document.querySelector('.slider'), {
+    adaptiveHeight: true,
+    dots: true,
+	arrows: false,
+	autoplay: true,
+	responsive: {
+		768: {
+			dots: false
+		},
+	}
+  });
+
+// /////////////////////////////////////////
+// EMAIL VALIDATION (CTA SECTION)
+
 const toggleButton = document.querySelector('.nav__mobile-toggle-button')
 const primaryNavigation = document.querySelector('.primary-nav')
 const headerContainer = document.querySelector('.header__container')
@@ -7,7 +24,6 @@ const footerInput = document.querySelector('.footer__input')
 const msgText = document.querySelector('.footer__input-msgtext ')
 const inputErrorStyles = document.querySelector('.footer__input--error')
 const submitButton = document.querySelector('.button--small')
-
 
 const switchMobileNavigation = () => {
 	headerContainer.hasAttribute('data-visible')
