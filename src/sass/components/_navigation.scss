@@ -21,7 +21,7 @@
 		right: 1.57rem;
 		top: 2.633rem;
 
-		z-index: 100;
+		z-index: 10000;
 
 		@include b.respond-to('medium') {
 			display: none;
@@ -46,7 +46,7 @@
 		text-align: center;
 		font-weight: bold;
 
-		z-index: 100;
+		z-index: 10000;
 
 		&[data-visible] {
 			display: block;
