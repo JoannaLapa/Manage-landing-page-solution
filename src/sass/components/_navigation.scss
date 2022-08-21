@@ -80,18 +80,26 @@
 			font-size: v.$fs-200;
 			font-weight: bold;
 
+			list-style: none;
 			opacity: 0.7;
 			cursor: pointer;
 		}
 
 		li {
 			transition: color 0.3s;
+
+			a {
+				text-decoration: none;
+				color: v.$primary-900;
+
+				&:hover,
+				&:focus-visible {
+					color: v.$neutral-300;
+				}
+			}
 		}
 
-		li:hover,
-		li:focus-visible {
-			color: v.$neutral-300;
-		}
+	
 	}
 }
 
