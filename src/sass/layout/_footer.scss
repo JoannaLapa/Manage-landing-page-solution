@@ -52,9 +52,15 @@
 			grid-row: 2/3;
 		}
 
-		a:is(:hover, :focus) .footer__social-media-icon {
-			fill: v.$primary-400;
+		a {
+			font-size: 0;
+
+			&:is(:hover, :focus) .footer__social-media-icon {
+				fill: v.$primary-400;
+			}
 		}
+
+		
 	}
 
 	&__social-media-icon {

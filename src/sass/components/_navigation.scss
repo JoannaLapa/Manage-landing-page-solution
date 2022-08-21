@@ -124,6 +124,7 @@
 	row-gap: 1rem;
 
 	font-weight: bold;
+	list-style: none;
 
 	@include b.respond-to('extra-large') {
 		column-gap: 13.3vw;

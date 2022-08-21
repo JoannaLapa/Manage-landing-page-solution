@@ -18,13 +18,14 @@
     <div class="header__container">
         <a href="#"><img class="logo" src="src/img/logo.svg" alt="Manage - company logo"></a>
         <div class="primary-nav__wrapper">
-            <button class="nav__mobile-toggle-button" aria-controls="primary-navigation" aria-expanded="false">
+            <button class="nav__mobile-toggle-button" aria-controls="nav1" aria-expanded="false">
                 <img class="nav__mobile-icon--open" data-visible src="src/img/icon-hamburger.svg" alt=""
                     aria-hidden="true">
                 <img class="nav__mobile-icon--close" src="src/img/icon-close.svg" alt="" aria-hidden="true">
                 <span class="sr--visually-hidden">Menu</span>
             </button>
-            <nav class="primary-nav" id="primary-navigation">
+            <nav class="primary-nav" aria-labelledby="nav1">
+                <h2 class="sr--visually-hidden" id="nav1">Primary navigation</h2>
                 <ul class="primary-nav__ul">
                     <li><a href="#">Pricing</a></li>
                     <li><a href="#">Product</a></li>
@@ -118,8 +119,8 @@
             <li>
                 <div class="slider__slide">
                     <img class="slider__img" src="src/img/avatar-anisha.png" alt="">
-                    <div class="slider__c
-                            <h3 class="text-primary-900 fw-bold ">Anisha
+                    <div class="slider__content">
+                            <h3 class="text-primary-900 fw-bold">Anisha
                         <blockquote class="slider__blockquote text-neutral-300"> “Manage has
                             supercharged our team’s workflow. The ability to maintain
                             visibility on larger milestones at all times keeps everyone motivated.”</blockquote>
@@ -131,7 +132,7 @@
                 <div class="slider__slide">
                     <img class="slider__img" src="src/img/avatar-ali.png" alt="">
                     <div class="slider__content">
-                            <h3 class="text-primary-900 fw-bold ">Ali Bravo</h3>
+                            <h3 class="text-primary-900 fw-bold">Ali Bravo</h3>
                         <blockquote class="slider__blockquote text-neutral-300">“We have been able
                             to cancel so many other subscriptions since using Manage. There is no more cross-channel
                             confusion and everyone is much more focused.”</blockquote>
@@ -143,7 +144,7 @@
                 <div class="slider__slide">
                     <img class="slider__img" src="src/img/avatar-richard.png" alt="">
                     <div class="slider__content">
-                            <h3 class="text-primary-900 fw-bold ">Richard Watts</h3>
+                            <h3 class="text-primary-900 fw-bold">Richard Watts</h3>
                         <blockquote class="slider__blockquote text-neutral-300">“Manage allows us
                             to provide structure and process. It keeps us organized
                             and focused. I can’t stop recommending them to everyone I talk to!”</blockquote>
@@ -155,7 +156,7 @@
                 <div class="slider__slide">
                     <img class="slider__img" src="src/img/avatar-shanai.png" alt="">
                     <div class="slider__content">
-                            <h3 class="text-primary-900 fw-bold ">Shanai Gough</h3>
+                            <h3 class="text-primary-900 fw-bold">Shanai Gough</h3>
                         <blockquote class="slider__blockquote text-neutral-300">“Their software
                             allows us to track, manage and collaborate on our projects
                             from anywhere. It keeps the whole team in-sync without being intrusive.”</blockquote>
@@ -185,7 +186,7 @@
         <div class="even-columns__footer padding__block--3">
             <div class="even-columns__box padding__block--1" data-order="third">
                 <form class="footer__form ">
-                    <div> <input class="footer__input" type="email" name="email" id="email" aria-describedBy="message"
+                    <div> <input class="footer__input" type="email" name="email" id="email" aria-describedBy="message"  aria-label="email"
                             placeholder="Updates in your inbox…">
                         <p class="footer__input-msgtext " id="message"></p>
                     </div>
@@ -194,7 +195,8 @@
                 </form>
             </div>
             <div class="even-columns__box padding-inline--3" data-order="second">
-                <nav class="footer__nav ">
+                <nav class="footer__nav" aria-labelledby="nav2">
+                    <h2 class="sr--visually-hidden" id="nav2">Secondary navigation</h2>
                     <ul class="text-neutral-100 paragraph__typography--common footer__nav-ul">
                         <li>Home</li>
                         <li>Careers</li>
@@ -207,22 +209,22 @@
                 </nav>
             </div>
             <div class="even-columns__box justify-self--start-md align-items--start-md" data-order="first">
-                <ul class="footer__social-media-ul" aria-label="social media links">
-                    <li><a href="#" aria-label="facebook">
+                <ul class="footer__social-media-ul">
+                    <li><a href="#" aria-label="facebook">Facebook
                             <svg class="footer__social-media-icon">
                                 <use xlink:href="src/img/social-icons.svg#icon-facebook"></use>
                             </svg></a></li>
-                    <li><a href="#" aria-label="youtube"><svg class="footer__social-media-icon">
+                    <li><a href="#" aria-label="youtube">Youtube<svg class="footer__social-media-icon">
                                 <use xlink:href="src/img/social-icons.svg#icon-youtube"></use>
                             </svg></a></li>
-                    <li><a href="#" aria-label="twitter">
+                    <li><a href="#" aria-label="twitter">Twitter
                             <svg class="footer__social-media-icon">
                                 <use xlink:href="src/img/social-icons.svg#icon-twitter"></use>
                             </svg></a></li>
-                    <li><a href="#" aria-label=""><svg class="footer__social-media-icon">
+                    <li><a href="#" aria-label="">Pinterest<svg class="footer__social-media-icon">
                                 <use xlink:href="src/img/social-icons.svg#icon-pinterest"></use>
                             </svg></a></li>
-                    <li><a href="#" aria-label=""><svg class="footer__social-media-icon">
+                    <li><a href="#" aria-label="">Instagram<svg class="footer__social-media-icon">
                                 <use xlink:href="src/img/social-icons.svg#icon-instagram"></use>
                             </svg></a> </li>
                 </ul>
