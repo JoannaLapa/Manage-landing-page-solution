@@ -7,8 +7,12 @@ const slider = new A11YSlider(document.querySelector('.slider'), {
 	autoplay: true,
 	responsive: {
 		768: {
-			dots: false
+			dots: false,
+			slidesToShow: 2
 		},
+		1200: {
+			slidesToShow: null
+		}
 	}
   });
 
