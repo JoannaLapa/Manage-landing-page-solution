@@ -56,6 +56,8 @@
 			display: flex;
 			flex-direction: column;
 			gap: 1.4375rem;
+
+			list-style: none;
 		}
 	}
 }
@@ -127,7 +129,7 @@
 	list-style: none;
 
 	@include b.respond-to('extra-large') {
-		column-gap: 13.3vw;
+		column-gap: 12.8vw;
 		row-gap: 0.875rem;
 		padding-top: 0.3125rem;
 	}

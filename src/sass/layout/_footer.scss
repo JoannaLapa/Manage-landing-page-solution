@@ -45,11 +45,16 @@
 		@include b.respond-to('medium') {
 			gap: 0.8125rem;
 			justify-items: stretch;
-			align-self: end;
+			align-items: flex-start;
 		}
 
 		@include b.respond-to('large') {
 			grid-row: 2/3;
+		}
+
+		li {
+			display: flex;
+			align-items: flex-start;
 		}
 
 		a {
@@ -80,6 +85,8 @@
 .even-columns__footer {
 	row-gap: 2.75rem;
 	column-gap: 2vw;
+	padding-block: 2.75rem;
+
 	@include b.respond-to('large') {
 		grid-template-columns: 14.5% 39% 25%;
 		justify-content: space-between;
@@ -88,6 +95,7 @@
 
 		width: 77vw;
 		padding-left: 0.3125rem;
+		padding-block: 3.4375rem 7.375rem;
 	}
 
 	a {

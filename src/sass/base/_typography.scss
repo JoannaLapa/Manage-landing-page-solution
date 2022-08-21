@@ -7,6 +7,11 @@ body {
 
 //utility classes
 
+.fs-200 {
+	font-size: v.$fs-200;
+	letter-spacing: 0.0625rem;
+}
+
 .fs-300 {
 	font-size: v.$fs-300;
 }

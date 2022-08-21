@@ -1,6 +1,13 @@
 @use 'abstracts/variables' as v;
 @use 'abstracts/breakpoints' as b;
 
+.primary-section {
+
+	@include b.respond-to('large') {
+		padding-block: 2.875rem;
+	}
+
+}
 .intro-img {
 	width: 89vw;
 
@@ -122,5 +129,6 @@ p[data-width='narrow--200'] {
 		grid-template-columns: 67.36vw 1fr;
 		align-items: center;
 		padding-block: 4.0625rem;
+		// gap: 48.96%;
 	}
 }

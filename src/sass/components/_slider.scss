@@ -100,7 +100,7 @@
 		}
 
 		@include b.respond-to('extra-extra-large') {
-			padding-block: 8.31440rem 11rem;
+			padding-block: 5.75rem 180px;
 		}
 	}
 
@@ -170,7 +170,7 @@
 
 		h3 {
 			letter-spacing: -0.0625rem;
-			align-items: center;
+			text-align: center;
 		}
 	}
 }
