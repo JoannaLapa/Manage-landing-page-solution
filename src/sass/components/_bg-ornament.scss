@@ -15,21 +15,24 @@ body::before {
 }
 
 body::before {
+	width: 100%;
+	height: 80%;
+
 	background-image: url('../img/bg-tablet-pattern-wo.svg'), url('../img/bg-tablet-pattern-wo.svg');
 	background-position: -31.5rem 70rem, 30rem -10rem;
 
-	width: 100%;
-	height: 80%;
 	z-index: -100;
+
 	@include b.respond-to-max('small') {
 		background-size: 85%, 120%;
 		background-position: 15rem 32rem, 4rem -7rem;
 	}
 
 	@include b.respond-to('extra-large') {
-		background-position: -31.5rem 70rem, 48.5rem -10rem;
-		width: 100vw;
+		width: 100%;
 		height: 100vh;
+
+		background-position: -31.5rem 70rem, 48.5rem -10rem;
 	}
 }
 

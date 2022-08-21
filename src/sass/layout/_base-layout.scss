@@ -66,13 +66,6 @@ p[data-order='third--2'] {
 }
 
 //UTILITY CLASSES
-.active {
-	display: block;
-}
-
-.inactive {
-	display: none;
-}
 
 .padding__block--1 {
 	padding-block: 0.4rem;
@@ -82,9 +75,6 @@ p[data-order='third--2'] {
 	padding-block: 1.375rem;
 }
 
-.padding__block--2-1 {
-	padding-block: 1.375rem 3.125rem;
-}
 .padding__block--3 {
 	padding-block: 2.75rem;
 
@@ -101,10 +91,6 @@ p[data-order='third--2'] {
 	}
 }
 
-.padding__block--5 {
-	padding-block: 5.9375rem 3.875rem;
-}
-
 .padding__inline--1 {
 	padding-inline: 1.0625rem;
 
@@ -114,22 +100,6 @@ p[data-order='third--2'] {
 }
 
 .padding__inline--2 {
-	padding-inline: 1.5rem;
-
-	@include b.respond-to('medium') {
-		padding-inline: 1.25rem;
-	}
-}
-
-.padding__inline--2-0 {
-	padding-inline: 1.5rem;
-
-	@include b.respond-to('medium') {
-		padding-inline: 0.3125rem;
-	}
-}
-
-.padding__inline--3 {
 	padding-inline: 2.1875rem;
 }
 
@@ -155,20 +125,10 @@ p[data-order='third--2'] {
 	align-items: start;
 }
 
-.align-items--end-md {
-	@include b.respond-to('medium') {
-		align-items: end;
-	}
-}
-
 .justify-self--start-md {
 	@include b.respond-to('medium'){
 	justify-self: start
 }
-}
-
-.justify-content-space-between {
-	justify-content: space-between;
 }
 
 .display-min-md {

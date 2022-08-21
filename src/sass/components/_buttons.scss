@@ -17,7 +17,7 @@
 .footer__input {
 	height: 2.8125rem;
 
-	text-shadow: 0px 0px 1px rgba(255, 239, 235, 1);
+	text-shadow: 0 0 1px rgba(255, 239, 235, 1);
 	cursor: pointer;
 }
 
@@ -55,6 +55,8 @@
 
 .button--white {
 	transition: color 0.3s;
+	color: v.$primary-400;
+	background-color: v.$neutral-100;
 
 	&:hover,
 	&:focus-visible {

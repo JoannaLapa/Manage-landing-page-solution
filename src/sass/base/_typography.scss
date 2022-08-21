@@ -7,14 +7,6 @@ body {
 
 //utility classes
 
-.fs-body {
-	font-size: v.$fs-400;
-}
-
-.fs-200 {
-	font-size: v.$fs-200;
-}
-
 .fs-300 {
 	font-size: v.$fs-300;
 }
@@ -58,10 +50,6 @@ body {
 	@include b.respond-to('medium') {
 		text-align: left;
 	}
-}
-
-.fw-semi-bold {
-	font-weight: v.$fw-semi-bold;
 }
 
 .fw-bold {
@@ -110,14 +98,6 @@ body {
 .third-heading {
 	font-size: v.$fs-600;
 	letter-spacing: -1px;
-}
-
-.letter-spacing-normal {
-	letter-spacing: normal;
-}
-
-.text__align--center {
-	text-align: center;
 }
 
 .attribution {
