@@ -16,8 +16,6 @@ This is a solution to the [Manage landing page challenge on Frontend Mentor](htt
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -37,8 +35,8 @@ Users should be able to:
 ![](./mobile_screenshot.png)
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [click here to skip](https://github.com/JoannaLapa/Manage-landing-page-solution)
+- Live Site URL: [click here to skip](https://joannalapa.github.io/Manage-landing-page-solution/)
 
 ## My process
 
@@ -46,36 +44,17 @@ Users should be able to:
 
 - Semantic HTML5 markup
 - SCSS
+- Gulp
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+I learnt about accessibility issuses in navigation and slider. I learnt about a11y slider library and used it in my project. I practiced layout skills. 
 
 ### Continued development
 
-I would like to focus on accessibility issues and Javascript.
+I would like to focus on accessibility issues, Javascript and Vue.js framework.
 
 ### Useful resources
 
@@ -84,15 +63,10 @@ I would like to focus on accessibility issues and Javascript.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+- Frontend Mentor - [@JoannaLapa](https://www.frontendmentor.io/profile/JoannaLapa)
+- Github - [@JoannaLapa ](https://github.com/JoannaLapa)
 
 ## Acknowledgments
 
 Kevin Povell's videos
-
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+A11Y page for accessibility issues
