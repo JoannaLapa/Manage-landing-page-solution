@@ -18,10 +18,10 @@
     <div class="header__container">
         <a href="#"><img class="logo" src="src/img/logo.svg" alt="Manage - company logo"></a>
         <div class="primary-nav__wrapper">
-            <button class="nav__mobile-toggle-button" aria-controls="primary-navigation" aria-expanded="false">
-                <img class="nav__mobile-icon--open" data-visible src="src/img/icon-hamburger.svg" alt=""
+            <button class="nav__mobile-toggle-button" aria-controls="nav1" aria-expanded="false">
+                <img class="nav__mobile-icon--open" data-visible src="src/img/icon-hamburger.svg" alt="open-icon"
                     aria-hidden="true">
-                <img class="nav__mobile-icon--close" src="src/img/icon-close.svg" alt="" aria-hidden="true">
+                <img class="nav__mobile-icon--close" src="src/img/icon-close.svg" alt="close-icon" aria-hidden="true">
                 <span class="sr--visually-hidden">Menu</span>
             </button>
             <nav class="primary-nav" aria-labelledby="nav1">
@@ -40,7 +40,7 @@
     </div>
 </header>
   <main>
-    <div class="container padding__inline--1">
+    <div class="container padding__inline--1" data-includes="with-pseudoelement">
 
         <section class="primary-section">
             <div class="even-columns" data-order="revert">
@@ -56,13 +56,13 @@
                         Manage makes it simple for software teams to plan
                         day-to-day
                         tasks while keeping the larger team goals in view.</p>
-                    <button class="button--orange text-neutral-200 bg-primary-400 margin-block-1">Get
+                    <button class="button--orange text-neutral-200 bg-primary-400 margin-block-1" data-includes="with-pseudoelement">Get
                         Started</button>
                 </div>
             </div>
         </section>
 
-        <section>
+        <section class="secondary-section">
             <div class="even-columns align-items--start-md">
                 <div class="even-columns__box padding-left align-items--start">
                     <h2 class="secondary-heading text-primary-900 fw-bold  padding__block--4">
@@ -78,7 +78,6 @@
                     <ul class="advantages__list">
                         <li class="advantages__item">
                             <h3 class="text-primary-900 fw-bold third-heading ">Track company-wide progress</h3>
-                            <!-- </div> -->
                             <p class="text-neutral-300 paragraph__font-size--400">See how your day-to-day tasks fit
                                 into the wider vision. Go
                                 from
@@ -87,7 +86,6 @@
                         </li>
                         <li class="advantages__item">
                             <h3 class="text-primary-900 fw-bold third-heading">Advanced built-in reports</h3>
-                            <!-- </div> -->
                             <p class="text-neutral-300 paragraph__font-size--400">Set internal delivery
                                 estimates
                                 and track progress toward
@@ -98,7 +96,6 @@
                         <li class="advantages__item">
                             <h3 class="text-primary-900 fw-bold third-heading">Everything you need in one place
                             </h3>
-                            <!-- </div> -->
                             <p class="text-neutral-300 paragraph__font-size--400">Stop jumping from one service
                                 to
                                 another to communicate,
