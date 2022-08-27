@@ -1,43 +1,65 @@
 @use 'abstracts/variables' as v;
 @use 'abstracts/breakpoints' as b;
 
-.cta-section,
-.even-columns {
-	position: relative;
+.even-columns,
+.even-columns__box,
+.logo {
 	isolation: isolate;
 }
 
 .cta-section::before,
-body::before {
+.bg-ornament__box--top,
+.bg-ornament__box--center-right {
 	position: absolute;
-	content: '';
+	inset: 0;
+
+	width: 100%;
+
 	background-repeat: no-repeat;
 }
 
-body::before {
-	width: 100%;
-	height: 80%;
+.bg-ornament__box--top {
+	height: 120%;
 
-	background-image: url('../img/bg-tablet-pattern-wo.svg'), url('../img/bg-tablet-pattern-wo.svg');
-	background-position: -31.5rem 70rem, 30rem -10rem;
+	background-image: url('../img/bg-tablet-pattern-wo.svg');
+	background-size: 120%;
+	background-position: top -7rem left 3.5rem;
 
-	z-index: -100;
-
-	@include b.respond-to-max('small') {
-		background-size: 85%, 120%;
-		background-position: 15rem 32rem, 4rem -7rem;
+	@include b.respond-to('small') {
+		background-position: top -19rem left 6rem;
 	}
 
+	@include b.respond-to('medium') {
+		background-size: 70%;
+		background-position: top -12rem left clamp(30rem, 20rem + 25vw, 50rem);
+	}
 	@include b.respond-to('extra-large') {
-		width: 100%;
-		height: 100vh;
-
-		background-position: -31.5rem 70rem, 48.5rem -10rem;
+		background-size: 58%;
+		background-position: top -11rem left clamp(30rem, 20rem + 31.5vw, 50rem);
 	}
 }
 
+.bg-ornament__box--center-right {
+	height: 200%;
+
+	background-image: url('../img/bg-tablet-pattern-wo.svg');
+	background-size: 85%;
+	background-position: top clamp(32rem, 22rem + 20vw, 50rem) left clamp(15rem, 5rem + 40vw, 100rem);
+
+	@include b.respond-to('medium') {
+		background-position: top clamp(52rem, 52rem + 20vw, 100rem) right clamp(10rem, 10rem + 67vw, 200rem);
+		background-size: 58%;
+	}
+}
+
+.cta-section {
+	position: relative;
+}
+
 .cta-section::before {
-	inset: 0;
+	content: '';
+
+	height: 100%;
 
 	background-image: url('../img/bg-simplify-section-mobile.svg');
 	background-position: 0% 45%;
