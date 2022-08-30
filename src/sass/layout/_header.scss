@@ -1,6 +1,7 @@
 @use 'abstracts/breakpoints' as b;
 @use 'abstracts/variables' as v;
 
+
 .header__container {
 	@include b.respond-to-max('medium') {
 		&[data-overlay]::before {
@@ -24,7 +25,7 @@
 	margin-inline: auto;
 	padding-inline: 1.5rem;
 	padding-block: 2.75rem;
-
+z-index: -15;
 	@include b.respond-to('medium') {
 		padding-inline: 1.4375rem;
 	}

@@ -3,7 +3,7 @@
 
 .even-columns,
 .even-columns__box,
-.logo {
+.logo{
 	isolation: isolate;
 }
 
@@ -20,12 +20,12 @@
 }
 
 .bg-ornament__box--top {
-	height: 120%;
+	height: 500%;
 
 	background-image: url('../img/bg-tablet-pattern-wo.svg');
 	background-size: 120%;
 	background-position: top -7rem left 3.5rem;
-
+	overflow: visible;
 	@include b.respond-to('small') {
 		background-position: top -19rem left 6rem;
 	}
@@ -41,14 +41,14 @@
 }
 
 .bg-ornament__box--center-right {
-	height: 200%;
+	height: 100%;
 
 	background-image: url('../img/bg-tablet-pattern-wo.svg');
 	background-size: 85%;
-	background-position: top clamp(32rem, 22rem + 20vw, 50rem) left clamp(15rem, 5rem + 40vw, 100rem);
+	background-position: top clamp(20rem, 20rem + 20vw, 50rem) left clamp(15rem, 5rem + 40vw, 100rem);
 
 	@include b.respond-to('medium') {
-		background-position: top clamp(52rem, 52rem + 20vw, 100rem) right clamp(10rem, 10rem + 67vw, 200rem);
+		background-position: top clamp(42rem, 41.5rem + 20vw, 100rem) right clamp(10rem, 10.5rem + 67vw, 200rem);
 		background-size: 58%;
 	}
 }
