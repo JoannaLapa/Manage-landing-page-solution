@@ -55,11 +55,11 @@
 
 .cta-section {
 	position: relative;
+	isolation: isolate;
 }
 
 .cta-section::before {
 	content: '';
-
 	height: 100%;
 
 	background-image: url('../img/bg-simplify-section-mobile.svg');
