@@ -15,7 +15,7 @@
 
 	@include b.respond-to('small') {
 		width: 100%;
-		max-width: 600px;
+		max-width: 37.5rem;
 		height: 100%;
 	}
 }
