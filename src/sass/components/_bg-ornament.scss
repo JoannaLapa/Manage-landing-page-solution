@@ -1,12 +1,6 @@
 @use 'abstracts/variables' as v;
 @use 'abstracts/breakpoints' as b;
 
-.even-columns,
-.even-columns__box,
-.logo{
-	isolation: isolate;
-}
-
 .cta-section::before,
 .bg-ornament__box--top,
 .bg-ornament__box--center-right {
