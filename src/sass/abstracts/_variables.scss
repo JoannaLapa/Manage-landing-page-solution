@@ -1,17 +1,17 @@
 @use 'abstracts/breakpoints';
 //colors
 // ### Primary
-$primary-300: hsl(12, 72%, 68%);
-$primary-400: hsl(12, 88%, 59%);
-$primary-900: hsl(228, 39%, 23%);
+$primary-300: rgb(232, 138, 115);
+$primary-400: rgb(242, 95, 58);
+$primary-900: rgb(36, 45, 82);
 
 // ### Neutral
-$neutral-100: hsl(0, 0%, 98%);
-$neutral-200: hsl(12, 100%, 96%);
+$neutral-100: rgb(250, 250, 250);
+$neutral-200: rgb(255, 239, 235);
 $neutral-250: rgba(144, 149, 167, 0.05);
-$neutral-300: hsl(227, 12%, 61%);
-$neutral-850: hsla(234, 15%, 13%, 0.502);
-$neutral-900: #1d1e25;
+$neutral-300: rgb(144, 149, 167);
+$neutral-850: rgba(28, 29, 38, 0.502);
+$neutral-900: rgb(29, 30, 37);
 
 //font-sizes
 $fs-200: 0.6875rem;
