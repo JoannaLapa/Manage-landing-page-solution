@@ -46,7 +46,6 @@
 .button--orange,
 .button--small {
 	transition: background-color 0.3s;
-	z-index: 5;
 	&:hover,
 	&:focus-visible {
 		background-color: v.$primary-300;
