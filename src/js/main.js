@@ -23,21 +23,21 @@ const switchMobileNavigation = () => {
 
 ////////////////////////////////////////////
 // SLIDER
-// const slider = new A11YSlider(document.querySelector('.slider'), {
-// 	adaptiveHeight: true,
-// 	dots: true,
-// 	arrows: false,
-// 	autoplay: true,
-// 	responsive: {
-// 		768: {
-// 			dots: false,
-// 			slidesToShow: 2,
-// 		},
-// 		1200: {
-// 			slidesToShow: null,
-// 		},
-// 	},
-// });
+const slider = new A11YSlider(document.querySelector('.slider'), {
+	adaptiveHeight: true,
+	dots: true,
+	arrows: false,
+	autoplay: true,
+	responsive: {
+		768: {
+			dots: false,
+			slidesToShow: 2,
+		},
+		1200: {
+			slidesToShow: 3,
+		},
+	},
+});
 
 // /////////////////////////////////////////
 // EMAIL VALIDATION (CTA SECTION)
