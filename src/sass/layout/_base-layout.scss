@@ -1,5 +1,9 @@
 @use 'abstracts/breakpoints' as b;
 
+.block-scroll{
+overflow: hidden;
+}
+
 .container {
 	display: grid;
 	align-items: center;

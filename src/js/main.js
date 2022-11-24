@@ -19,6 +19,7 @@ const switchMobileNavigation = () => {
 	primaryNavigation.toggleAttribute('data-visible')
 	openingIcon.toggleAttribute('data-visible')
 	closingIcon.toggleAttribute('data-visible')
+	document.querySelector('body').classList.toggle('block-scroll')
 }
 
 ////////////////////////////////////////////
