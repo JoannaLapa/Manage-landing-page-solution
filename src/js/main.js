@@ -41,13 +41,6 @@ const slider = new A11YSlider(document.querySelector('.slider'), {
 
 // /////////////////////////////////////////
 // EMAIL VALIDATION (CTA SECTION)
-const checkIfCorrect = input => {
-	const re =
-		/^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i
-
-	re.test(input.value) ? makeIfCorrect() : makeIfNotCorrect()
-}
-
 const makeIfCorrect = () => {
 	footerInput.classList.remove('footer__input--error')
 	msgText.textContent = 'Your email was added successfully!'
@@ -60,6 +53,13 @@ const makeIfNotCorrect = () => {
 	footerInput.classList.add('footer__input--error')
 	footerInput.setAttribute('aria-invalid', 'true')
 	footerInput.value = ''
+}
+
+const checkIfCorrect = input => {
+	const re =
+		/^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i
+
+	re.test(input.value) ? makeIfCorrect() : makeIfNotCorrect()
 }
 
 ////ADDEVENTLISTENERS
