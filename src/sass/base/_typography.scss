@@ -71,7 +71,7 @@ body {
 
 	text-align: center;
 
-	text-shadow: 0px 0px 2px v.$primary-900;
+	text-shadow: 0px 0px 0.5px v.$primary-900;
 
 	@include b.respond-to('medium') {
 		text-align: left;
