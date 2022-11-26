@@ -1,7 +1,7 @@
 @use 'abstracts/breakpoints' as b;
 
-.block-scroll{
-overflow: hidden;
+.block-scroll {
+	overflow: hidden;
 }
 
 .container {
@@ -79,15 +79,15 @@ h2[data-width='narrow--200'] {
 
 //UTILITY CLASSES
 
-.padding__block--1 {
+.padding__block--04 {
 	padding-block: 0.4rem;
 }
 
-.padding__block--2 {
+.padding__block--13 {
 	padding-block: 1.375rem;
 }
 
-.padding__block--3 {
+.padding__block--27 {
 	padding-block: 2.75rem;
 
 	@include b.respond-to('extra-large') {
@@ -95,11 +95,9 @@ h2[data-width='narrow--200'] {
 	}
 }
 
-.padding__block--4 {
-	padding-block: 4.375rem 0;
-
-	@include b.respond-to('extra-large') {
-		padding-block: 4.0625rem 0;
+.padding__block--28 {
+	@include b.respond-to('large') {
+		padding-block: 2.875rem;
 	}
 }
 

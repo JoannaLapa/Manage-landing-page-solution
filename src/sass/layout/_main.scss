@@ -1,13 +1,6 @@
 @use 'abstracts/variables' as v;
 @use 'abstracts/breakpoints' as b;
 
-.primary-section {
-
-	@include b.respond-to('large') {
-		padding-block: 2.875rem;
-	}
-
-}
 .intro-img {
 	width: 89vw;
 
