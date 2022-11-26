@@ -25,7 +25,9 @@ const switchMobileNavigation = () => {
 ////////////////////////////////////////////
 // SLIDER
 const slider = new A11YSlider(document.querySelector('.slider'), {
+	autoplaySpeed: 2500,
 	adaptiveHeight: true,
+	centerMode: true,
 	dots: true,
 	arrows: false,
 	autoplay: true,
@@ -35,7 +37,7 @@ const slider = new A11YSlider(document.querySelector('.slider'), {
 			slidesToShow: 2,
 		},
 		1200: {
-			slidesToShow: 3,
+			slidesToShow: null,
 		},
 	},
 })
