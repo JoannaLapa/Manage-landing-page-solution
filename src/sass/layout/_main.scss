@@ -13,21 +13,6 @@
 	}
 }
 
-p[data-width='narrow'] {
-	padding-inline: 1.5rem;
-
-	@include b.respond-to('medium') {
-		padding-inline: 0;
-		max-width: 21.25rem;
-	}
-}
-
-p[data-width='narrow--200'] {
-	@include b.respond-to('medium') {
-		max-width: 27.5rem;
-	}
-}
-
 // ADVANTAGES LIST
 
 .advantages__list {
