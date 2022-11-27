@@ -33,8 +33,9 @@ body {
 
 /* Set core body defaults */
 body {
-	text-rendering: optimizeSpeed;
+	overflow-x: hidden;
 	line-height: 1.5;
+	text-rendering: optimizeSpeed;
 }
 
 /* A elements that don't have a class get default styles */
