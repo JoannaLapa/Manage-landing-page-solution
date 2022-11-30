@@ -18,7 +18,7 @@
 	background-image: url('../img/bg-tablet-pattern-wo.svg');
 	background-size: 120%;
 	background-position: top -7rem left 3.5rem;
-	overflow: visible;
+
 	@include b.respond-to('small') {
 		background-position: top -19rem left 6rem;
 	}
