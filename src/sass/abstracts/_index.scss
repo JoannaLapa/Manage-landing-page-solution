@@ -5,6 +5,8 @@
 // 2. Base stuff
 @forward 'base/typography';
 @forward 'base/reset';
+@forward 'base/utility-classes';
+
 
 // 3. Components 
 @forward 'components/bg-ornament';
@@ -13,7 +15,6 @@
 @forward 'components/navigation';
 
 // 4. Layout-related sections
-@forward 'layout/base-layout';
 @forward 'layout/footer';
 @forward 'layout/header';
 @forward 'layout/main';
