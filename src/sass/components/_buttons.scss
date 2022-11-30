@@ -28,12 +28,8 @@
 	font-weight: bold;
 }
 
-.button--white,
 .button--orange {
 	width: 8.625rem;
-}
-
-.button--orange {
 	box-shadow: 0 1.125em 1em -1em v.$primary-400;
 	color: v.$neutral-200;
 	background-color: v.$primary-400;
@@ -53,6 +49,7 @@
 }
 
 .button--white {
+	width: 8.625rem;
 	transition: color 0.3s;
 	color: v.$primary-400;
 	background-color: v.$neutral-100;
