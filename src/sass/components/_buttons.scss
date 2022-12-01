@@ -1,31 +1,26 @@
 @use 'abstracts/variables' as v;
 
-.button--white,
 .button--orange,
-.advantages__item::before,
 .button--small,
+.button--white,
 .footer__input {
+	height: 2.8125rem;
+
 	border-radius: 30rem;
 	border: 0.0625rem solid transparent;
 
 	font-size: v.$fs-300;
-}
-
-.button--white,
-.button--orange,
-.button--small,
-.footer__input {
-	height: 2.8125rem;
-
 	text-shadow: 0 0 0.5px rgba(255, 239, 235, 1);
 	cursor: pointer;
 }
 
-.button--white,
 .button--orange,
-.advantages__item::before,
 .button--small {
-	font-weight: bold;
+	transition: background-color 0.3s;
+	&:hover,
+	&:focus-visible {
+		background-color: v.$primary-300;
+	}
 }
 
 .button--orange {
@@ -39,20 +34,13 @@
 	width: clamp(4.125rem, 4.58vw, 5.3125rem);
 }
 
-.button--orange,
-.button--small {
-	transition: background-color 0.3s;
-	&:hover,
-	&:focus-visible {
-		background-color: v.$primary-300;
-	}
-}
-
 .button--white {
 	width: 8.625rem;
-	transition: color 0.3s;
+
 	color: v.$primary-400;
 	background-color: v.$neutral-100;
+
+	transition: color 0.3s;
 
 	&:hover,
 	&:focus-visible {
