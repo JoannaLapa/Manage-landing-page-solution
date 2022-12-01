@@ -1,5 +1,4 @@
 /// Mixin to manage responsive breakpoints
-/// @author Kitty Giraudel
 /// @param {String} $breakpoint - Breakpoint name
 /// @require $breakpoints
 
@@ -19,7 +18,7 @@ $breakpoints: (
 			@content;
 		}
 	} @else {
-		@warn 'Unfortunately no vlue can be retrievedfrom `#{$breakpoint}`.'+ 'Available breakpoints are: #{map-keys($breakpoints)}.';
+		@warn 'Unfortunately no value can be retrieved from `#{$breakpoint}`.'+ 'Available breakpoints are: #{map-keys($breakpoints)}.';
 	}
 }
 
@@ -29,6 +28,6 @@ $breakpoints: (
 			@content;
 		}
 	} @else {
-		@warn 'Unfortunately no vlue can be retrievedfrom `#{$breakpoint}`.'+ 'Available breakpoints are: #{map-keys($breakpoints)}.';
+		@warn 'Unfortunately no value can be retrieved from `#{$breakpoint}`.'+ 'Available breakpoints are: #{map-keys($breakpoints)}.';
 	}
 }
