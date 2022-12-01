@@ -40,8 +40,10 @@
 		right: 1.5rem;
 		width: clamp(4.375rem, 88vw, 20.3125rem);
 		padding-block: 2.8125rem;
+
 		background-color: v.$neutral-100;
 		border-radius: 0.3125rem;
+
 		text-align: center;
 		font-weight: bold;
 
@@ -64,7 +66,6 @@
 	@include b.respond-to('medium') {
 		display: flex;
 		align-items: center;
-
 		padding-block: 0.625rem;
 		width: clamp(20rem, 18rem + 8.2vw, 30rem);
 
@@ -107,6 +108,7 @@
 	height: 1px;
 	padding: 0;
 	margin: -1px;
+
 	overflow: hidden;
 	clip: rect(0, 0, 0, 0);
 	white-space: nowrap; /* added line */

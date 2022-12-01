@@ -7,8 +7,7 @@
 @forward 'base/reset';
 @forward 'base/utility-classes';
 
-
-// 3. Components 
+// 3. Components
 @forward 'components/bg-ornament';
 @forward 'components/buttons';
 @forward 'components/slider';
@@ -18,7 +17,6 @@
 @forward 'layout/footer';
 @forward 'layout/header';
 @forward 'layout/main';
-
 
 // 5. Themes
 @forward 'themes/default';

@@ -1,6 +1,6 @@
 # Frontend Mentor - Manage landing page solution
 
-This is a solution to the [Manage landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/manage-landing-page-SLXqC6P5). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Manage landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/manage-landing-page-SLXqC6P5). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -33,6 +33,7 @@ Users should be able to:
 
 ![](./desktop_screenshot.png)
 ![](./mobile_screenshot.png)
+
 ### Links
 
 - Solution URL: [click here to skip](https://github.com/JoannaLapa/Manage-landing-page-solution)
@@ -48,9 +49,10 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
+
 ### What I learned
 
-I learnt about accessibility issuses in navigation and slider. I learnt about a11y slider library and used it in my project. I practiced layout skills. 
+I learnt about accessibility issuses in navigation and slider. I learnt about a11y slider library and used it in my project. I practiced layout skills.
 
 ### Continued development
 
@@ -58,7 +60,7 @@ I would like to focus on accessibility issues, Javascript and Vue.js framework.
 
 ### Useful resources
 
-- [Accessible hiding](https://a11y-guidelines.orange.com/en/web/components-examples/accessible-hiding/) - This helped me for understanding accessible hiding reasons. 
+- [Accessible hiding](https://a11y-guidelines.orange.com/en/web/components-examples/accessible-hiding/) - This helped me for understanding accessible hiding reasons.
 - [Kevin Povell's videos](https://www.youtube.com/playlist?list=PL4-IK0AVhVjNDRHoXGort7sDWcna8cGPA) - This is an amazing video series which helped me finally improve my solution. My approach was to prepare parts of my solutions and after watching Kevin's videos. I improve my solution with some his tips.
 
 ## Author
