@@ -124,7 +124,9 @@
 		column-gap: 5rem;
 		row-gap: 1rem;
 
+		font-size: v.$fs-400;
 		font-weight: bold;
+		text-align: left;
 		list-style: none;
 
 		@include b.respond-to('extra-large') {

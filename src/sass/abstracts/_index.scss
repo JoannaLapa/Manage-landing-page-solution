@@ -3,7 +3,6 @@
 @forward 'abstracts/variables';
 
 // 2. Base stuff
-@forward 'base/typography';
 @forward 'base/reset';
 @forward 'base/utility-classes';
 
@@ -17,6 +16,3 @@
 @forward 'layout/footer';
 @forward 'layout/header';
 @forward 'layout/main';
-
-// 5. Themes
-@forward 'themes/default';

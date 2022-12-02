@@ -32,6 +32,8 @@
 .footer__input::placeholder {
 	color: v.$neutral-900;
 
+	font-size: v.$fs-300;
+	text-indent: -1rem;
 	text-align: left;
 }
 

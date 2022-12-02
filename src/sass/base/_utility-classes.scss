@@ -1,5 +1,119 @@
 @use 'abstracts/breakpoints' as b;
 
+@use 'abstracts/variables' as v;
+@use 'abstracts/breakpoints' as b;
+
+//utility classes
+
+//typography
+.ff-basic {
+	font-family: v.$ff-be-vietnam;
+}
+
+.fs-200 {
+	font-size: v.$fs-200;
+	letter-spacing: 0.0625rem;
+}
+
+.fs-300 {
+	font-size: v.$fs-300;
+}
+
+.fs-400 {
+	font-size: v.$fs-400;
+	line-height: 1.95;
+
+	@include b.respond-to('medium') {
+		font-size: v.$fs-600;
+		line-height: 1.5;
+	}
+}
+
+.fs-600 {
+	font-size: v.$fs-600;
+	line-height: 1.6563;
+}
+
+.fs-800 {
+	font-size: v.$fs-800;
+	line-height: 1.4;
+	text-align: center;
+
+	@include b.respond-to('medium') {
+		font-size: v.$fs-830;
+		letter-spacing: -0.6px;
+		line-height: 1.2;
+		text-align: left;
+	}
+}
+
+.fw-bold {
+	font-weight: v.$fw-bold;
+}
+
+.fw-semi-bold {
+	font-weight: v.$fw-semi-bold;
+}
+
+.primary-heading {
+	font-size: v.$fs-800;
+	line-height: 1.4;
+
+	text-align: center;
+
+	text-shadow: 0px 0px 0.5px v.$primary-900;
+
+	@include b.respond-to('medium') {
+		text-align: left;
+	}
+
+	@include b.respond-to('extra-large') {
+		font-size: v.$fs-850;
+		line-height: 1.24;
+		letter-spacing: -0.0313rem;
+	}
+}
+
+.secondary-heading {
+	padding-inline: 1.5rem;
+
+	font-size: v.$fs-700;
+	line-height: 1.45;
+	letter-spacing: -1px;
+
+	text-align: center;
+
+	@include b.respond-to('medium') {
+		padding-inline: 0;
+
+		font-size: v.$fs-830;
+
+		letter-spacing: -0.5px;
+		line-height: 1.2;
+		text-align: left;
+	}
+}
+
+.third-heading {
+	font-size: v.$fs-600;
+	letter-spacing: -1px;
+}
+
+.typography-common-styles {
+	font-family: 'Be Vietnam Pro', sans-serif;
+	font-weight: 200;
+
+	text-shadow: 0px 0px 1px v.$neutral-900;
+	text-align: center;
+	opacity: 0.7;
+
+	@include b.respond-to('medium') {
+		text-align: left;
+	}
+}
+
+//alignment
+
 .align-items--start {
 	align-items: start;
 }
@@ -143,4 +257,30 @@
 
 .pos-relative {
 	position: relative;
+}
+
+//themes
+
+.clr-text-primary-900 {
+	color: v.$primary-900;
+}
+
+.clr-text-neutral-100 {
+	color: v.$neutral-100;
+}
+
+.clr-text-neutral-200 {
+	color: v.$neutral-200;
+}
+
+.clr-text-neutral-300 {
+	color: v.$neutral-300;
+}
+
+.clr-bg-primary-400 {
+	background-color: v.$primary-400;
+}
+
+.clr-bg-neutral-900 {
+	background-color: v.$neutral-900;
 }
