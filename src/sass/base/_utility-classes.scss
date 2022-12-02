@@ -4,6 +4,7 @@
 //utility classes
 
 //typography
+
 .ff-basic {
 	font-family: v.$ff-be-vietnam;
 }
@@ -116,8 +117,8 @@
 	align-items: start;
 }
 
-.align-items--start-md {
-	align-items: start;
+.align-items--center {
+	align-items: center;
 }
 
 .block-scroll {
@@ -162,10 +163,18 @@
 	}
 }
 
+.even-columns,
+.even-columns__cta,
+.even-columns__footer {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 0.3125rem;
+}
+
 .even-columns {
 	@include b.respond-to('medium') {
 		grid-template-columns: repeat(2, 1fr);
-		place-items: center stretch;
+		justify-items: stretch;
 		gap: 6vw;
 	}
 
@@ -197,14 +206,6 @@
 			grid-area: 1/3/2/4;
 		}
 	}
-}
-
-.even-columns,
-.even-columns__cta,
-.even-columns__footer {
-	display: grid;
-	grid-template-columns: 1fr;
-	gap: 0.3125rem;
 }
 
 .justify-self--start-md {

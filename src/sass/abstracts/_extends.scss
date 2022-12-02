@@ -1,0 +1,11 @@
+@use 'abstracts/variables' as v;
+
+%btn-input-common-styles {
+    height: 2.8125rem;
+
+	border-radius: 30rem;
+	border: 0.0625rem solid transparent;
+
+	font-size: v.$fs-300;
+	text-shadow: 0 0 0.5px rgba(255, 239, 235, 1);
+}

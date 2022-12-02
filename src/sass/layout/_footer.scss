@@ -1,4 +1,5 @@
 @use 'abstracts/breakpoints' as b;
+@use 'abstracts/extends' as e;
 @use 'abstracts/variables' as v;
 
 .footer__form {
@@ -18,9 +19,10 @@
 }
 
 .footer__input {
+	@extend %btn-input-common-styles;
 	min-width: min-content;
 	width: 100%;
-	padding-left: 20px;
+	padding-left: 1.25rem;
 
 	color: v.$primary-400;
 }
@@ -43,7 +45,7 @@
 
 	color: v.$primary-400;
 
-	font-size: 10px;
+	font-size: v.$fs-100;
 	font-style: italic;
 	letter-spacing: -0.5px;
 }
