@@ -1,14 +1,15 @@
 'use srtict';
 
-const closingIcon = document.querySelector('.nav__mobile-icon--close');
-const footerInput = document.querySelector('.footer__input');
-const headerContainer = document.querySelector('.header__container');
-const inputErrorStyles = document.querySelector('.footer__input--error');
-const msgText = document.querySelector('.footer__input-msgtext ');
-const openingIcon = document.querySelector('.nav__mobile-icon--open');
-const primaryNavigation = document.querySelector('.primary-nav');
-const submitButton = document.querySelector('.button--small');
-const toggleButton = document.querySelector('.nav__mobile-toggle-button');
+(() => {
+	const closingIcon = document.querySelector('.nav__mobile-icon--close');
+	const footerInput = document.querySelector('.footer__input');
+	const headerContainer = document.querySelector('.header__container');
+	const msgText = document.querySelector('.footer__input-msgtext ');
+	const openingIcon = document.querySelector('.nav__mobile-icon--open');
+	const primaryNavigation = document.querySelector('.primary-nav');
+	const submitButton = document.querySelector('.button--small');
+	const toggleButton = document.querySelector('.nav__mobile-toggle-button');
+
 
 /////MOBILE NAVIGATION//////////////////////////////////
 const switchMobileNavigation = () => {
@@ -72,3 +73,4 @@ submitButton.addEventListener('click', e => {
 });
 
 toggleButton.addEventListener('click', switchMobileNavigation);
+})();
