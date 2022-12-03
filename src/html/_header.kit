@@ -1,6 +1,6 @@
 <header class="pos-relative">
     <div class="bg-ornament__box--top"></div>
-    <div class="header__container">
+    <nav class="primary-nav">
         <a href="#"><img class="logo" src="src/img/logo.svg" alt="Manage - company logo"></a>
         <div class="primary-nav__wrapper">
             <button class="nav__mobile-toggle-button" aria-controls="nav1" aria-expanded="false">
@@ -9,7 +9,7 @@
                 <img class="nav__mobile-icon--close" src="src/img/icon-close.svg" alt="close-icon" aria-hidden="true">
                 <span class="sr--visually-hidden">Menu</span>
             </button>
-            <nav class="primary-nav" aria-labelledby="nav1">
+            <div class="primary-nav__ul-container" aria-labelledby="nav1">
                 <h2 class="sr--visually-hidden" id="nav1">Primary navigation</h2>
                 <ul class="primary-nav__ul">
                     <li class="primary-nav__item">
@@ -28,8 +28,8 @@
                         <a class="primary-nav__link" href="#">Community</a>
                     </li>
                 </ul>
-            </nav>
+            </div>
         </div>
         <button class="button--orange display-min-md fw-bold">Get Started</button>
-    </div>
+    </nav>
 </header>

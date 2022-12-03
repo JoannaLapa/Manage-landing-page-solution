@@ -17,7 +17,7 @@
 <body class="ff-basic">
   <header class="pos-relative">
     <div class="bg-ornament__box--top"></div>
-    <div class="header__container">
+    <nav class="primary-nav">
         <a href="#"><img class="logo" src="src/img/logo.svg" alt="Manage - company logo"></a>
         <div class="primary-nav__wrapper">
             <button class="nav__mobile-toggle-button" aria-controls="nav1" aria-expanded="false">
@@ -26,7 +26,7 @@
                 <img class="nav__mobile-icon--close" src="src/img/icon-close.svg" alt="close-icon" aria-hidden="true">
                 <span class="sr--visually-hidden">Menu</span>
             </button>
-            <nav class="primary-nav" aria-labelledby="nav1">
+            <div class="primary-nav__ul-container" aria-labelledby="nav1">
                 <h2 class="sr--visually-hidden" id="nav1">Primary navigation</h2>
                 <ul class="primary-nav__ul">
                     <li class="primary-nav__item">
@@ -45,10 +45,10 @@
                         <a class="primary-nav__link" href="#">Community</a>
                     </li>
                 </ul>
-            </nav>
+            </div>
         </div>
         <button class="button--orange display-min-md fw-bold">Get Started</button>
-    </div>
+    </nav>
 </header>
   <main class="pos-relative">
     <section class="container">
@@ -75,7 +75,7 @@
         </div>
         <div class="even-columns align-items-start">
             <div class="even-columns__box padding-left align-items-start">
-                <h2 class="secondary-heading clr-text-primary-900 fw-bold  padding__block--4">
+                <h2 class="secondary-heading clr-text-primary-900 fw-bold">
                     What’s different about Manage?
                 </h2>
                 <p
@@ -215,7 +215,7 @@
                     </div>
                 </form>
             </div>
-            <div class="even-columns__box padding-inline--3" data-order="second">
+            <div class="even-columns__box padding-inline-3" data-order="second">
                 <nav class="footer__nav" aria-labelledby="nav2">
                     <h2 class="sr--visually-hidden" id="nav2">Secondary navigation</h2>
                     <ul class="clr-text-neutral-100 typography-common-styles footer__nav-ul">
