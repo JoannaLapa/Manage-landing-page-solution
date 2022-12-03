@@ -1,5 +1,20 @@
-@use 'abstracts/variables' as v;
 @use 'abstracts/breakpoints' as b;
+@use 'abstracts/extends' as e;
+@use 'abstracts/variables' as v;
+
+.bg-ornament__box--center-right {
+	@extend %ornament-common-styles;
+	height: 100%;
+
+	background-image: url('../img/bg-tablet-pattern-wo.svg');
+	background-size: 85%;
+	background-position: top clamp(20rem, 20rem + 20vw, 50rem) left clamp(15rem, 5rem + 40vw, 100rem);
+
+	@include b.respond-to('medium') {
+		background-position: top clamp(42rem, 41.5rem + 20vw, 100rem) right clamp(10rem, 10.5rem + 67vw, 200rem);
+		background-size: 58%;
+	}
+}
 
 .intro-img {
 	width: 89vw;
@@ -98,6 +113,30 @@
 }
 
 // CTA
+
+.cta-section {
+	position: relative;
+	isolation: isolate;
+}
+
+.cta-section::before {
+	@extend %ornament-common-styles;
+	content: '';
+	height: 100%;
+
+	background-image: url('../img/bg-simplify-section-mobile.svg');
+	background-position: 0% 45%;
+
+	@include b.respond-to('medium') {
+		background-image: url('../img/bg-tablet-pattern.svg');
+		background-position: 0% 0%;
+	}
+
+	@include b.respond-to('extra-large') {
+		background-image: url('../img/bg-simplify-section-desktop.svg');
+		background-position: 16rem -9rem;
+	}
+}
 
 .even-columns__cta {
 	padding-block: 5.9375rem 3.875rem;

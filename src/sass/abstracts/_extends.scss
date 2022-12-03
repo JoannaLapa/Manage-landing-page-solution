@@ -17,3 +17,13 @@
 		background-color: v.$primary-300;
 	}
 }
+
+%ornament-common-styles {
+	position: absolute;
+	inset: 0;
+
+	width: 100%;
+
+	background-repeat: no-repeat;
+	z-index: -10;
+}

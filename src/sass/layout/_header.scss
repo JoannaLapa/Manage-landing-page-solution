@@ -1,5 +1,28 @@
 @use 'abstracts/breakpoints' as b;
+@use 'abstracts/extends' as e;
 @use 'abstracts/variables' as v;
+
+.bg-ornament__box--top {
+	@extend %ornament-common-styles;
+	height: 500%;
+
+	background-image: url('../img/bg-tablet-pattern-wo.svg');
+	background-size: 120%;
+	background-position: top -7rem left 3.5rem;
+
+	@include b.respond-to('small') {
+		background-position: top -19rem left 6rem;
+	}
+
+	@include b.respond-to('medium') {
+		background-size: 70%;
+		background-position: top -12rem left clamp(30rem, 20rem + 25vw, 50rem);
+	}
+	@include b.respond-to('extra-large') {
+		background-size: 58%;
+		background-position: top -11rem left clamp(30rem, 20rem + 31.5vw, 50rem);
+	}
+}
 
 .header__container {
 	@include b.respond-to-max('medium') {
