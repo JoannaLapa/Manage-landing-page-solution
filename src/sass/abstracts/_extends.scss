@@ -9,3 +9,11 @@
 	font-size: v.$fs-300;
 	text-shadow: 0 0 0.5px rgba(255, 239, 235, 1);
 }
+
+%btn-same-hover-styles {
+    transition: background-color 0.3s;
+	&:hover,
+	&:focus-visible {
+		background-color: v.$primary-300;
+	}
+}
