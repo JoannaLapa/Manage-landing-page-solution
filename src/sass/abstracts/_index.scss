@@ -8,9 +8,9 @@
 @forward 'base/utility-classes';
 
 // 3. Components
-@forward 'components/buttons';
-@forward 'components/slider';
-@forward 'components/navigation';
+@forward 'components/buttons/button-orange';
+@forward 'components/buttons/button-small';
+@forward 'components/buttons/button-white';
 
 // 4. Layout-related sections
 @forward 'layout/footer';

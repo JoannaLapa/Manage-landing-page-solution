@@ -1,0 +1,18 @@
+@use 'abstracts/variables' as v;
+@use 'abstracts/extends' as e;
+
+.button--white {
+	@extend %btn-input-common-styles;
+	width: 8.625rem;
+
+	color: v.$primary-400;
+	background-color: v.$neutral-100;
+
+	transition: color 0.3s;
+	cursor: pointer;
+
+	&:hover,
+	&:focus-visible {
+		color: v.$primary-300;
+	}
+}

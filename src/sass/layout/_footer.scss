@@ -123,3 +123,35 @@
 		grid-row: 1/2;
 	}
 }
+
+//footer navigation
+
+.footer__nav {
+	&-ul {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		column-gap: 5rem;
+		row-gap: 1rem;
+
+		font-size: v.$fs-400;
+		font-weight: bold;
+		text-align: left;
+		list-style: none;
+
+		@include b.respond-to('extra-large') {
+			column-gap: 12.8vw;
+			row-gap: 0.875rem;
+			padding-top: 0.3125rem;
+		}
+	}
+
+	&-item {
+		cursor: pointer;
+		transition: color 0.3s;
+
+		&:hover,
+		&:focus-visible {
+			color: v.$primary-400;
+		}
+	}
+}

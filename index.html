@@ -17,7 +17,7 @@
 <body class="ff-basic">
   <header class="pos-relative">
     <div class="bg-ornament__box--top"></div>
-    <nav class="primary-nav">
+    <div class="header__container">
         <a href="#"><img class="logo" src="src/img/logo.svg" alt="Manage - company logo"></a>
         <div class="primary-nav__wrapper">
             <button class="nav__mobile-toggle-button" aria-controls="nav1" aria-expanded="false">
@@ -26,29 +26,19 @@
                 <img class="nav__mobile-icon--close" src="src/img/icon-close.svg" alt="close-icon" aria-hidden="true">
                 <span class="sr--visually-hidden">Menu</span>
             </button>
-            <div class="primary-nav__ul-container" aria-labelledby="nav1">
+            <nav class="primary-nav" aria-labelledby="nav1">
                 <h2 class="sr--visually-hidden" id="nav1">Primary navigation</h2>
                 <ul class="primary-nav__ul">
-                    <li class="primary-nav__item">
-                        <a class="primary-nav__link" href="#">Pricing</a>
-                    </li>
-                    <li class="primary-nav__item">
-                        <a class="primary-nav__link" href="#">Product</a>
-                    </li>
-                    <li class="primary-nav__item">
-                        <a class="primary-nav__link" href="#">About Us</a>
-                    </li>
-                    <li class="primary-nav__item">
-                        <a class="primary-nav__link" href="#">Careers</a>
-                    </li>
-                    <li class="primary-nav__item">
-                        <a class="primary-nav__link" href="#">Community</a>
-                    </li>
+                    <li class="primary-nav__item"><a class="primary-nav__link" href="#">Pricing</a></li>
+                    <li class="primary-nav__item"><a class="primary-nav__link" href="#">Product</a></li>
+                    <li class="primary-nav__item"><a class="primary-nav__link" href="#">About Us</a></li>
+                    <li class="primary-nav__item"><a class="primary-nav__link" href="#">Careers</a></li>
+                    <li class="primary-nav__item"><a class="primary-nav__link" href="#">Community</a></li>
                 </ul>
-            </div>
+            </nav>
         </div>
         <button class="button--orange display-min-md fw-bold">Get Started</button>
-    </nav>
+    </div>
 </header>
   <main class="pos-relative">
     <section class="container">
@@ -66,10 +56,9 @@
                     day-to-day
                     tasks while keeping the larger team goals in view.
                 </p>
-                <button class="button--orange clr-text-neutral-200 clr-bg-primary-400 margin-block-1 fw-bold"
-                    data-includes="with-pseudoelement">Get
-                    Started
-                </button>
+                <div class="margin-block-1">
+                    <button class="button--orange || fw-bold">Get Started</button>
+                </div>
                 <div class="bg-ornament__box--center-right"></div>
             </div>
         </div>
@@ -78,8 +67,7 @@
                 <h2 class="secondary-heading clr-text-primary-900 fw-bold">
                     What’s different about Manage?
                 </h2>
-                <p
-                    class="clr-text-neutral-300 typography-common-styles fs-400 padding-block-1 content-narrow-1">
+                <p class="clr-text-neutral-300 typography-common-styles fs-400 padding-block-1 content-narrow-1">
                     Manage provides all the functionality your team needs, without
                     the complexity. Our software is tailor-made for modern digital
                     product teams.
@@ -180,7 +168,7 @@
                 </div>
             </li>
         </ul>
-        <button class="button--orange clr-text-neutral-200 clr-bg-primary-400 fw-bold"> Get Started</button>
+        <button class="button--orange || fw-bold">Get Started</button>
     </section>
 
     <section class="clr-bg-primary-400 cta-section">
@@ -192,9 +180,9 @@
                 </h2>
             </div>
             <div class="even-columns__box padding-block-2">
-                <button class="button--white fw-bold" data-order="second">Get
-                    Started
-                </button>
+                <button class="button--white fw-bold">Get
+    Started
+</button>
             </div>
         </div>
     </section>
@@ -211,7 +199,7 @@
                         </p>
                     </div>
                     <div>
-                        <button class="clr-text-neutral-200 clr-bg-primary-400 button--small fw-bold" type="submit">Go</button>
+                        <button class="button--small || clr-text-neutral-200 clr-bg-primary-400 fw-bold" type="submit">Go</button>
                     </div>
                 </form>
             </div>
@@ -268,8 +256,7 @@
                     </li>
                 </ul>
                 <a class="footer__logo-link" href="#">
-                    <img class="footer__logo padding-block-3" src="src/img/logo-white.svg"
-                        alt="Manage - company logo">
+                    <img class="footer__logo padding-block-3" src="src/img/logo-white.svg" alt="Manage - company logo">
                 </a>
             </div>
             <p class="typography-common-styles clr-text-neutral-100 fs-200 footer__copyright">Copyright 2020. All

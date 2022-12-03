@@ -1,0 +1,12 @@
+@use 'abstracts/variables' as v;
+@use 'abstracts/extends' as e;
+
+.button--orange {
+	@extend %btn-input-common-styles;
+	@extend %btn-same-hover-styles;
+	width: 8.625rem;
+	box-shadow: 0 1.125em 1em -1em v.$primary-400;
+	color: v.$neutral-200;
+	background-color: v.$primary-400;
+	cursor: pointer;
+}

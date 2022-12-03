@@ -1,0 +1,8 @@
+@use 'abstracts/extends' as e;
+
+.button--small {
+	@extend %btn-input-common-styles;
+	@extend %btn-same-hover-styles;
+	width: clamp(4.125rem, 4.58vw, 5.3125rem);
+	cursor: pointer;
+}
