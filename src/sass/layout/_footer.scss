@@ -1,4 +1,5 @@
 @use 'abstracts/breakpoints' as b;
+@use 'abstracts/extends' as e;
 @use 'abstracts/variables' as v;
 
 .footer__form {
@@ -6,7 +7,6 @@
 	grid-template-columns: 73.45% 1fr;
 	gap: 0.5rem;
 	grid-column: 1 / -1;
-
 	width: 100%;
 }
 
@@ -19,9 +19,10 @@
 }
 
 .footer__input {
+	@extend %btn-input-common-styles;
 	min-width: min-content;
 	width: 100%;
-	padding-left: 20px;
+	padding-left: 1.25rem;
 
 	color: v.$primary-400;
 }
@@ -33,15 +34,18 @@
 .footer__input::placeholder {
 	color: v.$neutral-900;
 
+	font-size: v.$fs-300;
+	text-indent: -1rem;
 	text-align: left;
 }
 
 .footer__input-msgtext {
 	padding-left: 0.9375rem;
 	padding-top: 0.3125rem;
+
 	color: v.$primary-400;
 
-	font-size: 10px;
+	font-size: v.$fs-100;
 	font-style: italic;
 	letter-spacing: -0.5px;
 }
@@ -78,6 +82,7 @@
 	&__icon {
 		width: 2.125rem;
 		height: 2.125rem;
+
 		fill: v.$neutral-100;
 		cursor: pointer;
 		transition: fill 0.3s;
@@ -99,7 +104,6 @@
 		justify-content: space-between;
 		align-items: start;
 		gap: 8.4vw;
-
 		width: 77vw;
 		padding-left: 0.3125rem;
 		padding-block: 3.4375rem 7.375rem;
@@ -117,5 +121,37 @@
 .footer__logo-link {
 	@include b.respond-to('large') {
 		grid-row: 1/2;
+	}
+}
+
+//footer navigation
+
+.footer__nav {
+	&-ul {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		column-gap: 5rem;
+		row-gap: 1rem;
+
+		font-size: v.$fs-400;
+		font-weight: bold;
+		text-align: left;
+		list-style: none;
+
+		@include b.respond-to('extra-large') {
+			column-gap: 12.8vw;
+			row-gap: 0.875rem;
+			padding-top: 0.3125rem;
+		}
+	}
+
+	&-item {
+		cursor: pointer;
+		transition: color 0.3s;
+
+		&:hover,
+		&:focus-visible {
+			color: v.$primary-400;
+		}
 	}
 }

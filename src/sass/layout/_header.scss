@@ -1,5 +1,28 @@
 @use 'abstracts/breakpoints' as b;
+@use 'abstracts/extends' as e;
 @use 'abstracts/variables' as v;
+
+.bg-ornament__box--top {
+	@extend %ornament-common-styles;
+	height: 500%;
+
+	background-image: url('../img/bg-tablet-pattern-wo.svg');
+	background-size: 120%;
+	background-position: top -7rem left 3.5rem;
+
+	@include b.respond-to('small') {
+		background-position: top -19rem left 6rem;
+	}
+
+	@include b.respond-to('medium') {
+		background-size: 70%;
+		background-position: top -12rem left clamp(30rem, 20rem + 25vw, 50rem);
+	}
+	@include b.respond-to('extra-large') {
+		background-size: 58%;
+		background-position: top -11rem left clamp(30rem, 20rem + 31.5vw, 50rem);
+	}
+}
 
 .header__container {
 	@include b.respond-to-max('medium') {
@@ -34,16 +57,111 @@
 		max-width: 80.5%;
 		padding-block: 3.625rem;
 	}
-
-	a {
-		align-self: center;
-
-		@include b.respond-to('medium') {
-			padding-top: 6px;
-		}
-	}
- }
+}
 
 .logo {
 	width: clamp(5rem, 5rem + 8vw, 9.375rem);
+}
+
+//navigation
+
+.nav__mobile {
+	&-toggle-button {
+		padding: 0.5em;
+
+		border: transparent;
+		background: transparent;
+
+		cursor: pointer;
+
+		@include b.respond-to('medium') {
+			display: none;
+		}
+	}
+
+	&-icon--open,
+	&-icon--close {
+		display: none;
+		position: fixed;
+		right: 1.57rem;
+		top: 2.633rem;
+
+		z-index: 10000;
+
+		@include b.respond-to('medium') {
+			display: none;
+		}
+		&[data-visible] {
+			display: block;
+		}
+	}
+}
+
+@include b.respond-to-max('medium') {
+	.primary-nav {
+		display: none;
+		position: fixed;
+		top: 6.25rem;
+		right: 1.5rem;
+		width: clamp(4.375rem, 88vw, 20.3125rem);
+		padding-block: 2.8125rem;
+		background-color: v.$neutral-100;
+		border-radius: 0.3125rem;
+		text-align: center;
+		font-weight: bold;
+
+		z-index: 10000;
+
+		&[data-visible] {
+			display: block;
+		}
+
+		&__ul {
+			flex-direction: column;
+			gap: 1.4375rem;
+
+			list-style: none;
+		}
+	}
+}
+
+.primary-nav {
+	@include b.respond-to('medium') {
+		display: flex;
+		align-items: center;
+
+		padding-block: 0.625rem;
+		width: clamp(20rem, 18rem + 8.2vw, 30rem);
+
+		background-color: transparent;
+	}
+	&__ul {
+		display: flex;
+		cursor: pointer;
+		list-style: none;
+
+		@include b.respond-to('medium') {
+			flex-direction: row;
+			gap: 2.22vw;
+
+			font-size: v.$fs-250;
+			font-weight: bold;
+
+			opacity: 0.7;
+		}
+	}
+
+	&__item {
+		transition: color 0.3s;
+	}
+
+	&__link {
+		text-decoration: none;
+		color: v.$primary-900;
+
+		&:hover,
+		&:focus-visible {
+			color: v.$neutral-300;
+		}
+	}
 }

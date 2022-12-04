@@ -2,245 +2,271 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="dit/img/favicon-32x32.jpg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;300;400;500;600;700&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/a11y-slider@latest/dist/a11y-slider.css" />
-  <link rel="stylesheet" href="dist/css/main.min.css">
-  <title>Frontend Mentor | Manage landing page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="dit/img/favicon-32x32.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/a11y-slider@latest/dist/a11y-slider.css" />
+    <link rel="stylesheet" href="dist/css/main.min.css">
+    <title>Frontend Mentor | Manage landing page</title>
 </head>
 
-<body>
-  <header class="header__section pos-relative">
-    <div class="bg-ornament__box--top"></div>
-    <div class="header__container">
-        <a href="#"><img class="logo" src="src/img/logo.svg" alt="Manage - company logo"></a>
-        <div class="primary-nav__wrapper">
-            <button class="nav__mobile-toggle-button" aria-controls="nav1" aria-expanded="false">
-                <img class="nav__mobile-icon--open" data-visible src="src/img/icon-hamburger.svg" alt="open-icon"
-                    aria-hidden="true">
-                <img class="nav__mobile-icon--close" src="src/img/icon-close.svg" alt="close-icon" aria-hidden="true">
-                <span class="sr--visually-hidden">Menu</span>
-            </button>
-            <nav class="primary-nav" aria-labelledby="nav1">
-                <h2 class="sr--visually-hidden" id="nav1">Primary navigation</h2>
-                <ul class="primary-nav__ul">
-                    <li class="primary-nav__item"><a class="primary-nav__link" href="#">Pricing</a></li>
-                    <li class="primary-nav__item"><a class="primary-nav__link" href="#">Product</a></li>
-                    <li class="primary-nav__item"><a class="primary-nav__link" href="#">About Us</a></li>
-                    <li class="primary-nav__item"><a class="primary-nav__link" href="#">Careers</a></li>
-                    <li class="primary-nav__item"><a class="primary-nav__link" href="#">Community</a></li>
-                </ul>
-            </nav>
-        </div>
-        <button class="button--orange display-min-md">Get Started</button>
-    </div>
-</header>
-  <main class="pos-relative">
-    <section class="container">
-        <div class="even-columns padding__block--28" data-order="revert">
-            <figure class="even-columns__box align-items--start" data-order="second"><img class="intro-img"
-                    src="dist/img/illustration-intro.svg" alt="">
-            </figure>
-            <div class="even-columns__box padding-left" data-order="first">
-                <h1 class="primary-heading fw-semi-bold text-primary-900 ">Bring everyone together
-                    to build better
-                    products.</h1>
-                <p class="text-neutral-300 paragraph__font-size--600 paragraph__typography--common content--narrow-1">
-                    Manage makes it simple for software teams to plan
-                    day-to-day
-                    tasks while keeping the larger team goals in view.</p>
-                <button class="button--orange text-neutral-200 bg-primary-400 margin-block-1"
-                    data-includes="with-pseudoelement">Get
-                    Started</button>
-                <div class="bg-ornament__box--center-right"></div>
-            </div>
-        </div>
-
-        <div class="even-columns align-items--start-md">
-            <div class="even-columns__box padding-left align-items--start">
-                <h2 class="secondary-heading text-primary-900 fw-bold  padding__block--4">
-                    What’s different about Manage?</h2>
-                <p
-                    class="text-neutral-300 paragraph__typography--common paragraph__font-size--400 padding__block--04 content--narrow-1">
-                    Manage provides all the functionality your team needs, without
-                    the complexity. Our software is tailor-made for modern digital
-                    product teams.</p>
-            </div>
-
-            <div class="even-columns__box padding__block--3 padding-left align-items--start">
-                <ul class="advantages__list">
-                    <li class="advantages__item">
-                        <h3 class="text-primary-900 fw-bold third-heading ">Track company-wide progress</h3>
-                        <p class="text-neutral-300 paragraph__font-size--400">See how your day-to-day tasks fit into the
-                            wider vision. Go from tracking progress at the milestone level all the way done to the
-                            smallest of details. Never lose sight of the bigger picture again.</p>
-                    </li>
-                    <li class="advantages__item">
-                        <h3 class="text-primary-900 fw-bold third-heading">Advanced built-in reports</h3>
-                        <p class="text-neutral-300 paragraph__font-size--400">Set internal delivery
-                            estimates
-                            and track progress toward
-                            company
-                            goals. Our customisable dashboard helps you build out the reports
-                            you need to keep key stakeholders informed.</p>
-                    </li>
-                    <li class="advantages__item">
-                        <h3 class="text-primary-900 fw-bold third-heading">Everything you need in one place
-                        </h3>
-                        <p class="text-neutral-300 paragraph__font-size--400">Stop jumping from one service
-                            to
-                            another to communicate,
-                            store files,
-                            track tasks and share documents. Manage offers an all-in-one team
-                            productivity solution.</p>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section class="slider__section">
-        <h2 class="secondary-heading text-primary-900 fw-bold letter-spacing-normal">What they’ve said</h2>
-
-        <ul class="slider">
-            <li>
-                <div class="slider__slide">
-                    <div class="slider__img">
-                        <img src="dist/img/avatar-anisha.jpg" alt="">
-                    </div>
-                    <div class="slider__content">
-                        <h3 class="text-primary-900 fw-bold slider__third-heading">Anisha</h3>
-                        <blockquote class="slider__blockquote text-neutral-300"> “Manage has
-                            supercharged our team’s workflow. The ability to maintain
-                            visibility on larger milestones at all times keeps everyone motivated.”</blockquote>
-                    </div>
-                </div>
-            </li>
-
-            <li>
-                <div class="slider__slide">
-                    <div class="slider__img">
-                        <img src="dist/img/avatar-ali.jpg" alt="The photo of Ali Bravo">
-                    </div>
-                    <div class="slider__content">
-                        <h3 class="text-primary-900 fw-bold slider__third-heading">Ali Bravo</h3>
-                        <blockquote class="slider__blockquote text-neutral-300">“We have been able
-                            to cancel so many other subscriptions since using Manage. There is no more cross-channel
-                            confusion and everyone is much more focused.”</blockquote>
-                    </div>
-                </div>
-            </li>
-
-            <li>
-                <div class="slider__slide">
-                    <div class="slider__img">
-                        <img src="dist/img/avatar-richard.jpg" alt="">
-                    </div>
-                    <div class="slider__content">
-                        <h3 class="text-primary-900 fw-bold slider__third-heading">Richard Watts</h3>
-                        <blockquote class="slider__blockquote text-neutral-300">“Manage allows us
-                            to provide structure and process. It keeps us organized
-                            and focused. I can’t stop recommending them to everyone I talk to!”</blockquote>
-                    </div>
-                </div>
-            </li>
-
-            <li>
-                <div class="slider__slide">
-                    <div class="slider__img">
-                        <img src="dist/img/avatar-shanai.jpg" alt="">
-                    </div>
-                    <div class="slider__content">
-                        <h3 class="text-primary-900 fw-bold slider__third-heading">Shanai Gough</h3>
-                        <blockquote class="slider__blockquote text-neutral-300">“Their software
-                            allows us to track, manage and collaborate on our projects
-                            from anywhere. It keeps the whole team in-sync without being intrusive.”</blockquote>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
-        <button class="button--orange text-neutral-200 bg-primary-400"> Get Started</button>
-    </section>
-
-    <section class="bg-primary-400 cta-section">
-        <div class="container padding__inline--2 even-columns__cta">
-            <div class="even-columns__box align-items--start" data-order="first">
-                <h2 class="paragraph__font-size--800 fw-bold text-neutral-100 content--narrow-2">Simplify how
-                    your
-                    team works today.</h2>
-            </div>
-            <div class="even-columns__box padding__block--13">
-                <button class="button--white" data-order="second">Get
-                    Started</button>
-            </div>
-        </div>
-    </section>
-</main>
-  <footer class="bg-neutral-900">
-    <div class="container">
-        <div class="even-columns__footer">
-            <div class="even-columns__box padding__block--04 " data-order="third">
-                <form class="footer__form ">
-                    <div> <input class="footer__input" type="email" name="email" id="email" aria-describedBy="message"
-                            aria-label="email" placeholder="Updates in your inbox…" autocomplete="off">
-                        <p class="footer__input-msgtext " id="message"></p>
-                    </div>
-                    <div><button class="text-neutral-200 bg-primary-400 button--small" type="submit">Go</button></div>
-                </form>
-            </div>
-            <div class="even-columns__box padding-inline--3" data-order="second">
-                <nav class="footer__nav" aria-labelledby="nav2">
-                    <h2 class="sr--visually-hidden" id="nav2">Secondary navigation</h2>
-                    <ul class="text-neutral-100 paragraph__typography--common footer__nav-ul">
-                        <li class="footer__nav-item">Home</li>
-                        <li class="footer__nav-item">Careers</li>
-                        <li class="footer__nav-item">Pricing</li>
-                        <li class="footer__nav-item">Community</li>
-                        <li class="footer__nav-item">Products</li>
-                        <li class="footer__nav-item">Privacy Policy</li>
-                        <li class="footer__nav-item">About Us</li>
+<body class="ff-basic">
+    <header class="pos-relative">
+        <div class="bg-ornament__box--top"></div>
+        <div class="header__container">
+            <a href="#"><img class="logo" src="src/img/logo.svg" alt="Manage - company logo"></a>
+            <div class="primary-nav__wrapper">
+                <button class="nav__mobile-toggle-button" aria-controls="nav1" aria-expanded="false">
+                    <img class="nav__mobile-icon--open" data-visible src="src/img/icon-hamburger.svg" alt="open-icon"
+                        aria-hidden="true">
+                    <img class="nav__mobile-icon--close" src="src/img/icon-close.svg" alt="close-icon"
+                        aria-hidden="true">
+                    <span class="sr--visually-hidden">Menu</span>
+                </button>
+                <nav class="primary-nav" aria-labelledby="nav1">
+                    <h2 class="sr--visually-hidden" id="nav1">Primary navigation</h2>
+                    <ul class="primary-nav__ul">
+                        <li class="primary-nav__item"><a class="primary-nav__link" href="#">Pricing</a></li>
+                        <li class="primary-nav__item"><a class="primary-nav__link" href="#">Product</a></li>
+                        <li class="primary-nav__item"><a class="primary-nav__link" href="#">About Us</a></li>
+                        <li class="primary-nav__item"><a class="primary-nav__link" href="#">Careers</a></li>
+                        <li class="primary-nav__item"><a class="primary-nav__link" href="#">Community</a></li>
                     </ul>
                 </nav>
             </div>
-            <div class="even-columns__box justify-self--start-md align-items--start-md" data-order="first">
-                <ul class="social-media__ul">
-                    <li class="social-media__item"><a class="social-media__link" href="#" aria-label="facebook">Facebook
-                            <svg class="social-media__icon">
-                                <use xlink:href="src/img/social-icons.svg#icon-facebook"></use>
-                            </svg></a></li>
-                    <li class="social-media__item"><a class="social-media__link" href="#"
-                            aria-label="youtube">Youtube<svg class="social-media__icon">
-                                <use xlink:href="src/img/social-icons.svg#icon-youtube"></use>
-                            </svg></a></li>
-                    <li class="social-media__item"><a class="social-media__link" href="#" aria-label="twitter">Twitter
-                            <svg class="social-media__icon">
-                                <use xlink:href="src/img/social-icons.svg#icon-twitter"></use>
-                            </svg></a></li>
-                    <li class="social-media__item"><a class="social-media__link" href="#" aria-label="">Pinterest<svg
-                                class="social-media__icon">
-                                <use xlink:href="src/img/social-icons.svg#icon-pinterest"></use>
-                            </svg></a></li>
-                    <li class="social-media__item"><a class="social-media__link" href="#" aria-label="">Instagram<svg
-                                class="social-media__icon">
-                                <use xlink:href="src/img/social-icons.svg#icon-instagram"></use>
-                            </svg></a> </li>
-                </ul>
-                <a class="footer__logo-link" href="#"><img class="footer__logo padding__block--27--3"
-                        src="src/img/logo-white.svg" alt="Manage - company logo"></a>
-            </div>
-            <p class="paragraph__typography--common text-neutral-100 fs-200 footer__copyright"> Copyright 2020. All
-                Rights Reserved</p>
+            <button class="button--orange display-min-md fw-bold">Get Started</button>
         </div>
-    </div>
-</footer>
-  <script src="//unpkg.com/a11y-slider@latest/dist/a11y-slider.js"></script>
-<script src="dist/js/main.min.js"></script>
+    </header>
+    <main class="pos-relative">
+        <section class="container">
+            <div class="even-columns padding-block-4 align-items-center" data-order="revert">
+                <figure class="even-columns__box align-items-start" data-order="second">
+                    <img class="intro-img" src="dist/img/illustration-intro.svg" alt="">
+                </figure>
+                <div class="even-columns__box padding-left" data-order="first">
+                    <h1 class="primary-heading fw-semi-bold clr-text-primary-900 ">Bring everyone together
+                        to build better
+                        products.
+                    </h1>
+                    <p class="clr-text-neutral-300 fs-600 typography-common-styles content-narrow-1">
+                        Manage makes it simple for software teams to plan
+                        day-to-day
+                        tasks while keeping the larger team goals in view.
+                    </p>
+                    <div class="margin-block-1">
+                        <button class="button--orange fw-bold">Get Started</button>
+                    </div>
+                    <div class="bg-ornament__box--center-right"></div>
+                </div>
+            </div>
+            <div class="even-columns align-items-start">
+                <div class="even-columns__box padding-left align-items-start">
+                    <h2 class="secondary-heading clr-text-primary-900 fw-bold">
+                        What’s different about Manage?
+                    </h2>
+                    <p class="clr-text-neutral-300 typography-common-styles fs-400 padding-block-1 content-narrow-1">
+                        Manage provides all the functionality your team needs, without
+                        the complexity. Our software is tailor-made for modern digital
+                        product teams.
+                    </p>
+                </div>
+                <div class="even-columns__box padding__block--3 padding-left align-items-start">
+                    <ul class="advantages__list">
+                        <li class="advantages__item">
+                            <h3 class="clr-text-primary-900 fw-bold third-heading ">Track company-wide progress</h3>
+                            <p class="clr-text-neutral-300 fs-400">See how your day-to-day tasks fit into the
+                                wider vision. Go from tracking progress at the milestone level all the way done to the
+                                smallest of details. Never lose sight of the bigger picture again.
+                            </p>
+                        </li>
+                        <li class="advantages__item">
+                            <h3 class="clr-text-primary-900 fw-bold third-heading">Advanced built-in reports</h3>
+                            <p class="clr-text-neutral-300 fs-400">Set internal delivery
+                                estimates
+                                and track progress toward
+                                company
+                                goals. Our customisable dashboard helps you build out the reports
+                                you need to keep key stakeholders informed.
+                            </p>
+                        </li>
+                        <li class="advantages__item">
+                            <h3 class="clr-text-primary-900 fw-bold third-heading">Everything you need in one place
+                            </h3>
+                            <p class="clr-text-neutral-300 fs-400">Stop jumping from one service
+                                to
+                                another to communicate,
+                                store files,
+                                track tasks and share documents. Manage offers an all-in-one team
+                                productivity solution.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="slider__section">
+            <h2 class="secondary-heading clr-text-primary-900 fw-bold letter-spacing-normal">What they’ve said</h2>
+            <ul class="slider">
+                <li>
+                    <div class="slider__slide">
+                        <div class="slider__img">
+                            <img src="dist/img/avatar-anisha.jpg" alt="">
+                        </div>
+                        <div class="slider__content">
+                            <h3 class="clr-text-primary-900 fw-bold slider__third-heading">Anisha</h3>
+                            <blockquote class="slider__blockquote clr-text-neutral-300"> “Manage has
+                                supercharged our team’s workflow. The ability to maintain
+                                visibility on larger milestones at all times keeps everyone motivated.”
+                            </blockquote>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="slider__slide">
+                        <div class="slider__img">
+                            <img src="dist/img/avatar-ali.jpg" alt="The photo of Ali Bravo">
+                        </div>
+                        <div class="slider__content">
+                            <h3 class="clr-text-primary-900 fw-bold slider__third-heading">Ali Bravo</h3>
+                            <blockquote class="slider__blockquote clr-text-neutral-300">“We have been able
+                                to cancel so many other subscriptions since using Manage. There is no more cross-channel
+                                confusion and everyone is much more focused.”
+                            </blockquote>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="slider__slide">
+                        <div class="slider__img">
+                            <img src="dist/img/avatar-richard.jpg" alt="">
+                        </div>
+                        <div class="slider__content">
+                            <h3 class="clr-text-primary-900 fw-bold slider__third-heading">Richard Watts</h3>
+                            <blockquote class="slider__blockquote clr-text-neutral-300">“Manage allows us
+                                to provide structure and process. It keeps us organized
+                                and focused. I can’t stop recommending them to everyone I talk to!”
+                            </blockquote>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="slider__slide">
+                        <div class="slider__img">
+                            <img src="dist/img/avatar-shanai.jpg" alt="">
+                        </div>
+                        <div class="slider__content">
+                            <h3 class="clr-text-primary-900 fw-bold slider__third-heading">Shanai Gough</h3>
+                            <blockquote class="slider__blockquote clr-text-neutral-300">“Their software
+                                allows us to track, manage and collaborate on our projects
+                                from anywhere. It keeps the whole team in-sync without being intrusive.”
+                            </blockquote>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <button class="button--orange fw-bold">Get Started</button>
+        </section>
+
+        <section class="clr-bg-primary-400 cta-section">
+            <div class="container padding-inline-1 even-columns__cta">
+                <div class="even-columns__box align-items-start" data-order="first">
+                    <h2 class="fs-800 fw-bold clr-text-neutral-100 content-narrow-2">Simplify how
+                        your
+                        team works today.
+                    </h2>
+                </div>
+                <div class="even-columns__box padding-block-2">
+                    <button class="button--white fw-bold">Get Started</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="clr-bg-neutral-900">
+        <div class="container">
+            <div class="even-columns__footer">
+                <div class="even-columns__box padding-block-1 " data-order="third">
+                    <form class="footer__form ">
+                        <div>
+                            <input class="footer__input" type="email" name="email" id="email" aria-describedBy="message"
+                                aria-label="email" placeholder="Updates in your inbox…" autocomplete="off">
+                            <p class="footer__input-msgtext " id="message">
+                            </p>
+                        </div>
+                        <div>
+                            <button class="button--small fw-bold" type="submit">Go</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="even-columns__box padding-inline-3" data-order="second">
+                    <nav class="footer__nav" aria-labelledby="nav2">
+                        <h2 class="sr--visually-hidden" id="nav2">Secondary navigation</h2>
+                        <ul class="clr-text-neutral-100 typography-common-styles footer__nav-ul">
+                            <li class="footer__nav-item">Home</li>
+                            <li class="footer__nav-item">Careers</li>
+                            <li class="footer__nav-item">Pricing</li>
+                            <li class="footer__nav-item">Community</li>
+                            <li class="footer__nav-item">Products</li>
+                            <li class="footer__nav-item">Privacy Policy</li>
+                            <li class="footer__nav-item">About Us</li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="even-columns__box justify-self-start-md align-items-start" data-order="first">
+                    <ul class="social-media__ul">
+                        <li class="social-media__item">
+                            <a class="social-media__link" href="#" aria-label="facebook">Facebook
+                                <svg class="social-media__icon">
+                                    <use xlink:href="src/img/social-icons.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-media__item">
+                            <a class="social-media__link" href="#" aria-label="youtube">Youtube
+                                <svg class="social-media__icon">
+                                    <use xlink:href="src/img/social-icons.svg#icon-youtube"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-media__item">
+                            <a class="social-media__link" href="#" aria-label="twitter">Twitter
+                                <svg class="social-media__icon">
+                                    <use xlink:href="src/img/social-icons.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-media__item">
+                            <a class="social-media__link" href="#" aria-label="">Pinterest
+                                <svg class="social-media__icon">
+                                    <use xlink:href="src/img/social-icons.svg#icon-pinterest"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-media__item">
+                            <a class="social-media__link" href="#" aria-label="">Instagram
+                                <svg class="social-media__icon">
+                                    <use xlink:href="src/img/social-icons.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                    <a class="footer__logo-link" href="#">
+                        <img class="footer__logo padding-block-3" src="src/img/logo-white.svg"
+                            alt="Manage - company logo">
+                    </a>
+                </div>
+                <p class="typography-common-styles clr-text-neutral-100 fs-200 footer__copyright">Copyright 2020. All
+                    Rights Reserved
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="//unpkg.com/a11y-slider@latest/dist/a11y-slider.js"></script>
+    <script src="dist/js/main.min.js"></script>
 </body>
 
 </html>

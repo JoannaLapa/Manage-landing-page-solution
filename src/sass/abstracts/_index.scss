@@ -1,23 +1,18 @@
 // 1. Configuration and helpers
 @forward 'abstracts/breakpoints';
+@forward 'abstracts/extends';
 @forward 'abstracts/variables';
 
 // 2. Base stuff
-@forward 'base/typography';
 @forward 'base/reset';
+@forward 'base/utility-classes';
 
-// 3. Components 
-@forward 'components/bg-ornament';
-@forward 'components/buttons';
-@forward 'components/slider';
-@forward 'components/navigation';
+// 3. Components
+@forward 'components/buttons/button-orange';
+@forward 'components/buttons/button-small';
+@forward 'components/buttons/button-white';
 
 // 4. Layout-related sections
-@forward 'layout/base-layout';
 @forward 'layout/footer';
 @forward 'layout/header';
 @forward 'layout/main';
-
-
-// 5. Themes
-@forward 'themes/default';

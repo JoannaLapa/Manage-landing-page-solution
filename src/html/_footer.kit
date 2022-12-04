@@ -1,19 +1,23 @@
-<footer class="bg-neutral-900">
+<footer class="clr-bg-neutral-900">
     <div class="container">
         <div class="even-columns__footer">
-            <div class="even-columns__box padding__block--04 " data-order="third">
+            <div class="even-columns__box padding-block-1 " data-order="third">
                 <form class="footer__form ">
-                    <div> <input class="footer__input" type="email" name="email" id="email" aria-describedBy="message"
+                    <div>
+                        <input class="footer__input" type="email" name="email" id="email" aria-describedBy="message"
                             aria-label="email" placeholder="Updates in your inbox…" autocomplete="off">
-                        <p class="footer__input-msgtext " id="message"></p>
+                        <p class="footer__input-msgtext " id="message">
+                        </p>
                     </div>
-                    <div><button class="text-neutral-200 bg-primary-400 button--small" type="submit">Go</button></div>
+                    <div>
+                        <!-- @include 'components/buttons/button-small.kit' -->
+                    </div>
                 </form>
             </div>
-            <div class="even-columns__box padding-inline--3" data-order="second">
+            <div class="even-columns__box padding-inline-3" data-order="second">
                 <nav class="footer__nav" aria-labelledby="nav2">
                     <h2 class="sr--visually-hidden" id="nav2">Secondary navigation</h2>
-                    <ul class="text-neutral-100 paragraph__typography--common footer__nav-ul">
+                    <ul class="clr-text-neutral-100 typography-common-styles footer__nav-ul">
                         <li class="footer__nav-item">Home</li>
                         <li class="footer__nav-item">Careers</li>
                         <li class="footer__nav-item">Pricing</li>
@@ -24,34 +28,51 @@
                     </ul>
                 </nav>
             </div>
-            <div class="even-columns__box justify-self--start-md align-items--start-md" data-order="first">
+            <div class="even-columns__box justify-self-start-md align-items-start" data-order="first">
                 <ul class="social-media__ul">
-                    <li class="social-media__item"><a class="social-media__link" href="#" aria-label="facebook">Facebook
+                    <li class="social-media__item">
+                        <a class="social-media__link" href="#" aria-label="facebook">Facebook
                             <svg class="social-media__icon">
                                 <use xlink:href="src/img/social-icons.svg#icon-facebook"></use>
-                            </svg></a></li>
-                    <li class="social-media__item"><a class="social-media__link" href="#"
-                            aria-label="youtube">Youtube<svg class="social-media__icon">
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-media__item">
+                        <a class="social-media__link" href="#" aria-label="youtube">Youtube
+                            <svg class="social-media__icon">
                                 <use xlink:href="src/img/social-icons.svg#icon-youtube"></use>
-                            </svg></a></li>
-                    <li class="social-media__item"><a class="social-media__link" href="#" aria-label="twitter">Twitter
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-media__item">
+                        <a class="social-media__link" href="#" aria-label="twitter">Twitter
                             <svg class="social-media__icon">
                                 <use xlink:href="src/img/social-icons.svg#icon-twitter"></use>
-                            </svg></a></li>
-                    <li class="social-media__item"><a class="social-media__link" href="#" aria-label="">Pinterest<svg
-                                class="social-media__icon">
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-media__item">
+                        <a class="social-media__link" href="#" aria-label="">Pinterest
+                            <svg class="social-media__icon">
                                 <use xlink:href="src/img/social-icons.svg#icon-pinterest"></use>
-                            </svg></a></li>
-                    <li class="social-media__item"><a class="social-media__link" href="#" aria-label="">Instagram<svg
-                                class="social-media__icon">
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-media__item">
+                        <a class="social-media__link" href="#" aria-label="">Instagram
+                            <svg class="social-media__icon">
                                 <use xlink:href="src/img/social-icons.svg#icon-instagram"></use>
-                            </svg></a> </li>
+                            </svg>
+                        </a>
+                    </li>
                 </ul>
-                <a class="footer__logo-link" href="#"><img class="footer__logo padding__block--27--3"
-                        src="src/img/logo-white.svg" alt="Manage - company logo"></a>
+                <a class="footer__logo-link" href="#">
+                    <img class="footer__logo padding-block-3" src="src/img/logo-white.svg" alt="Manage - company logo">
+                </a>
             </div>
-            <p class="paragraph__typography--common text-neutral-100 fs-200 footer__copyright"> Copyright 2020. All
-                Rights Reserved</p>
+            <p class="typography-common-styles clr-text-neutral-100 fs-200 footer__copyright">Copyright 2020. All
+                Rights Reserved
+            </p>
         </div>
     </div>
 </footer>
